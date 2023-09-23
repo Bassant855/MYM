@@ -27,9 +27,6 @@ function App() {
           </Routes>
         <Footer/>
       </LanguageProvider>
-  
-
-
     </BrowserRouter>
   )
 }
