@@ -1,0 +1,66 @@
+{
+    "navbar": {
+        "home": "Home",
+        "services":"Services",
+        "projects": "Projects",
+        "career":"Career",
+        "about-us": "About Us",
+        "contact-us":"Contact Us",
+        "info-about-us": "Information about us",
+        "our-team":"Our Team",
+        "blog":"Blog",
+        "certificate":"MYM Certificate"
+
+    },
+    "landing": {
+        "before-span": "Find the best",
+        "span":" Software ",
+        "after-span":"Solutions",
+        "para":"Your first choice to turn your idea into reality",
+        "red-btn":"Have a free Consultation",
+        "trans-btn":"Contact Us"
+    },
+    "footer": {
+        "main-data": {
+            "addres":"Al Haram 177 - Al Giza"
+        },
+        "service-data": {
+            "title":"Service",
+            "ui":"UI UX Design",
+           "mobile":" Mobile Development",
+            "motion":"Motion Graphic",
+            "web":"Web Development",
+            "marketing":"Digital Marketing",
+            "video":"Video Editing"
+        },
+        "company-data": {
+            "title":"Company",
+            "service":"Service",
+            "our-team":"Our Team",
+            "portfolio":"Portfolio",
+            "partner":"Out trusted partner"
+        },
+        "supourt-data":{
+            "title":"Supports",
+            "help":"Help Center",
+            "feed":"Feedback",
+            "contact":"Contact us",
+            "terms":"Terms conditions"
+        },
+        "social-data": {
+            "title":"Our Social Media",
+            "facebook":"Facebook",
+            "linkedin":"Linkedin",
+            "insta":"Instagram",
+            "theards":"Theards"
+        },
+        "foot-footer": {
+            "privacy":"Privacy",
+            "security": "Security",
+            "terms":"Terms",
+            "copy":"2021 MYM - All rights reserved."
+        }
+    }
+
+
+}

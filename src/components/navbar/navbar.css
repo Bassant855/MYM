@@ -1,0 +1,31 @@
+.logo-container {
+    width: 42px;
+}
+.logo-container img {
+    width: 100%;
+}
+.nav-link {
+    border-radius: 10px;
+    transition: .6s;
+}
+.nav-link:hover {
+    background-color: var(--pink-color);
+   
+}
+.dropdown-menu {
+    padding: 20px !important;
+}
+.dropdown-item:hover  {
+   color: var(--red-color) !important;
+   background-color: var(--pink-color) !important;
+  
+
+}
+
+.dropdown-item:hover .drop-icon {
+    stroke: var(--red-color) !important ;
+    fill: var(--red-color) !important;
+}
+.dropdown-item:hover .arrow {
+    visibility: visible !important;
+}
