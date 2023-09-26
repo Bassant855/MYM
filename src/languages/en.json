@@ -59,5 +59,29 @@
             "terms": "Terms",
             "copy": "2021 MYM - All rights reserved."
         }
+    },
+    "team": {
+        "heading": {
+            "title": "Our Expert",
+            "span": "TEAM",
+            "description": "This section is meant to be a mutual effort"
+        },
+        "categories": {
+            "all": "All",
+            "managers": "Managers",
+            "ui-ux": "UI-UX",
+            "mobile-developer": "Mobile Developer",
+            "web-developer": "Web Developer",
+            "non-technical": "Non Technical",
+            "others": "Others"
+        },
+        "team-data": {
+            "title": {
+                "founder": "Founder",
+                "art-director": "Art Director ( Employee )",
+                "brand-strategist": "Brand Strategist",
+                "graphic-designer": "Graphic Designer"
+            }
+        }
     }
 }

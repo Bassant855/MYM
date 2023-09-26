@@ -59,5 +59,29 @@
             "terms": "الاحكام",
             "copy": "2021 MYM - جميع الحقوق محفوظة"
         }
+    },
+    "team": {
+        "heading": {
+            "title": "فريق",
+            "span": "الخبراء لدينا",
+            "description": "يهدف هذا القسم إلى أن يكون جهدًا مشتركًا"
+        },
+        "categories": {
+            "all": "الجميع",
+            "managers": "المديرين",
+            "ui-ux": "واجهة المستخدم وتجربة المستخدم",
+            "mobile-developer": "مطور الجوال",
+            "web-developer": "مطور ويب",
+            "non-technical": "غير فنية",
+            "others": "آحرون"
+        },
+        "team-data": {
+            "title": {
+                "founder": "مؤسس",
+                "art-director": "مدير فني ( موظف )",
+                "brand-strategist": "استراتيجي العلامة التجارية",
+                "graphic-designer": "مصمم جرافيك"
+            }
+        }
     }
 }
