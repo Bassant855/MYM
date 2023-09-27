@@ -10,6 +10,7 @@ import logo from "../../assets/Logo (2).png";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
+
 const Navbar1 = () => {
     const { userLanguage, userLanguageChange } = useContext(LanguageContext);
 
@@ -19,9 +20,9 @@ const Navbar1 = () => {
     return (
         <Navbar expand="lg" className="bg-body-light">
             <Container>
-                <Navbar.Brand href="#home" className="logo-container">
+                <NavLink  to='/' className="logo-container">
                     <img src={logo} alt="logo" />
-                </Navbar.Brand>
+                </NavLink >
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 

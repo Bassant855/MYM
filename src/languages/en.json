@@ -17,7 +17,12 @@
         "after-span": "Solutions",
         "para": "Your first choice to turn your idea into reality",
         "red-btn": "Have a free Consultation",
-        "trans-btn": "Contact Us"
+        "trans-btn": "Contact Us",
+        "landing-bottom": {
+            "land-head":"Our Goal",
+            "land-para":"Tell us your app idea and we will help you bring this idea to life by creating apps and a website from scratch that suits your needs with the best price and highest quality",
+            "land-social":"Our pages on social media"
+        }
     },
     "footer": {
         "main-data": {
@@ -104,5 +109,82 @@
             "btn": "Apply Now",
             "emptyMsg": "Sorry, No Jobs Found"
         }
+    },
+    "home-service" : {
+        "serv-head":"Our",
+        "services-word":" Services",
+        "serv-para":"Explore our various tracks and services",
+        "serv-cards": {
+            "card1": {
+                "head":"Web Development",
+                "content":"We provide comprehensive web development services that encompass both frontend and backend development. Our team ......",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"Web Development"
+                }
+            },
+            "card2": {
+                "head":"App Development",
+                "content":"We specialize in app development using Flutter, a versatile and efficient framework. With Flutter's cross-platform capabilities, we ......",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"App Development"
+                }
+            },
+            "card3": {
+                "head":"UI/UX Design",
+                "content":"We provide UI/UX design services that focus on creating intuitive and engaging user experiences. Our team of talented designers works .....",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"UI/UX Design"
+                }
+            },
+            "card4": {
+                "head":"Graphic Design",
+                "content":"We offer top-notch graphic design services, combining creativity and technical expertise to deliver visually stunning and impactful ......",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"Graphic Design"
+                }
+        }
+    },
+    "serv-btn" :"View all services "
+   
+    },
+    "home-portfolio": {
+        "port-head":"Our",
+        "port-word":" Portfolio",
+        "port-para":"Discover our most important projects in the past years",
+        "port-btns": {
+            "all-port":" All ",
+            "designers":"Designers",
+            "mobile":"Mobile Developer",
+            "web":"Web developer",
+            "other":"Others"
+        },
+        "port-hover-btn": "See Details",
+        "port-btn":"Explore all",
+        "not-fount":"Not Found!"
+    },
+    "services": {
+
+    "work-procedure" :{
+        "heading": "We are here to ",
+        "heading-span": "help you",
+        "heading-content": "Our work procedure",
+        "contact-title": "Contact us",
+        "contact-content" : "Contact us and tell us anything you want to design",
+        "plan-title": "The plan",
+        "plan-content": "We will give you the complete construction steps for your project",
+        "design-title": "The Design",
+        "design-content": "Once agreed, we will give you a professional user interface design",
+        "programming-title": "Programming",
+        "programming-content": "We will write the program (code) and connect the databases",
+        "examination-title": "Final Examination",
+        "examination-content": "We will check the code and secure it from vulnerabilities",
+        "puplish-title": "Pubilsh",
+        "puplish-content": "We will upload and explain the application or website so you can start making profits"
+
     }
+}
 }
