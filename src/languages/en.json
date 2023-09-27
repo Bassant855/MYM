@@ -17,7 +17,12 @@
         "after-span": "Solutions",
         "para": "Your first choice to turn your idea into reality",
         "red-btn": "Have a free Consultation",
-        "trans-btn": "Contact Us"
+        "trans-btn": "Contact Us",
+        "landing-bottom": {
+            "land-head":"Our Goal",
+            "land-para":"Tell us your app idea and we will help you bring this idea to life by creating apps and a website from scratch that suits your needs with the best price and highest quality",
+            "land-social":"Our pages on social media"
+        }
     },
     "footer": {
         "main-data": {
@@ -107,7 +112,108 @@
             "proff-content": "Ensuring reliable communication, efficient project management.",
             "quality-title": "Quality assured",
             "quality-content": "Ensuring a reliable solution, and providing optimal performance."
-        }
+        },
         
+    "career": {
+        "hero": {
+            "title": "Work With Us",
+            "para": "We are Make Your Miracle startup company & We are ready for new talent to join our team ",
+            "btn": "View Jobs"
+        },
+        "why": {
+            "title": {
+                "red-text": "Why Work ",
+                "white-text": "With Us?"
+            },
+            "text": "Apply now and develop your skills and abilities",
+            "cards": {
+                "card_1": {
+                    "title": "Rapid Growth and Learning",
+                    "text": "Joining us means you'll be part of a dynamic team that's constantly evolving, learning, and expanding their skillsets."
+                },
+                "card_2": {
+                    "title": "Varied Domains",
+                    "text": "We excel in web design, mobile applications, front-end, back-end, flutter, and UI/UX"
+                },
+                "card_3": {
+                    "title": "Collaborative Environment",
+                    "text": "You'll collaborate with talented individuals who share your passion for software development"
+                }
+            }
+        },
+        "jobs": {
+            "title": {
+                "black-text": "Open ",
+                "red-text": "Positions"
+            },
+            "text": "Apply now and develop your skills and abilities",
+            "categories": {
+                "category_1": "All",
+                "category_2": "Designers",
+                "category_3": "Mobile Developer",
+                "category_4": "Web Developer",
+                "category_5": "Non Technical",
+                "category_6": "Others"
+            },
+            "btn": "Apply Now",
+            "emptyMsg": "Sorry, No Jobs Found"
+        }
+    },
+    "home-service" : {
+        "serv-head":"Our",
+        "services-word":" Services",
+        "serv-para":"Explore our various tracks and services",
+        "serv-cards": {
+            "card1": {
+                "head":"Web Development",
+                "content":"We provide comprehensive web development services that encompass both frontend and backend development. Our team ......",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"Web Development"
+                }
+            },
+            "card2": {
+                "head":"App Development",
+                "content":"We specialize in app development using Flutter, a versatile and efficient framework. With Flutter's cross-platform capabilities, we ......",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"App Development"
+                }
+            },
+            "card3": {
+                "head":"UI/UX Design",
+                "content":"We provide UI/UX design services that focus on creating intuitive and engaging user experiences. Our team of talented designers works .....",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"UI/UX Design"
+                }
+            },
+            "card4": {
+                "head":"Graphic Design",
+                "content":"We offer top-notch graphic design services, combining creativity and technical expertise to deliver visually stunning and impactful ......",
+                "service-hover": {
+                    "explore":"Explore",
+                    "content":"Graphic Design"
+                }
+        }
+    },
+    "serv-btn" :"View all services "
+   
+    },
+    "home-portfolio": {
+        "port-head":"Our",
+        "port-word":" Portfolio",
+        "port-para":"Discover our most important projects in the past years",
+        "port-btns": {
+            "all-port":" All ",
+            "designers":"Designers",
+            "mobile":"Mobile Developer",
+            "web":"Web developer",
+            "other":"Others"
+        },
+        "port-hover-btn": "See Details",
+        "port-btn":"Explore all",
+        "not-fount":"Not Found!"
     }
+    
 }
