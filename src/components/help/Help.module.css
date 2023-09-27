@@ -1,0 +1,91 @@
+.mainHeading {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.headingContent {
+  color: var(--grey-color);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+/* Work procedure section */
+.workProcedureContainer {
+  background: #fff;
+  padding: 2rem;
+}
+.workProcedureContainer .mainHeading {
+  color: black;
+}
+.stepContainer {
+  width: 20%;
+}
+.count {
+  padding: 0.1rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #92929d;
+
+}
+.count span {
+  color: #ff1013;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.topBadge {
+    order: 0;
+  }
+  
+  .bottomBadge {
+    order: 1; 
+  }
+  .bottomBadge  img{
+    transform: rotate(180deg);
+  }
+.borderTop {
+  border-radius: 13.3125rem;
+  border-top: 1px dashed #ff1013;
+}
+
+.borderBottom {
+  border-radius: 13.3125rem;
+  border-bottom: 1px dashed #ff1013;
+}
+
+.stepTitle {
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.stepContent {
+  color: #92929d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
+
+@media (max-width:650px) {
+  .helpContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stepContainer {
+    width: 50%;
+  }
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+}
