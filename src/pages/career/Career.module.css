@@ -1,0 +1,221 @@
+.career-hero {
+    min-height: 90vh;
+    background-image: url("../../assets/career_hero_left.png"),
+        url("../../assets/career_hero_right.png");
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-size: 260px 90%, 260px 90%;
+}
+
+.career-hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: inherit;
+}
+
+.career-hero__title {
+    font-size: 70px;
+    font-weight: 500;
+    color: var(--red-color);
+    margin-bottom: 2rem;
+}
+
+.career-hero__text {
+    width: 50%;
+
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    color: #939393;
+    margin-bottom: 4rem;
+}
+
+.career-hero__btn {
+    width: 26%;
+    text-align: center;
+}
+
+.career-why {
+    background-color: #252525;
+    padding-block: 2rem;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+.career-why__title,
+.career-jobs__title {
+    font-size: 50px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.career-why__title--red,
+.career-jobs__title--red {
+    color: var(--red-color);
+}
+
+.career-why__text,
+.career-jobs__text {
+    color: var(--grey-color);
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.career-why__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.career-jobs {
+    padding-block: 4rem;
+    text-align: center;
+}
+
+.career-jobs__categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    width: 90%;
+    border: 1px solid var(--grey-color);
+    border-radius: 6px;
+    margin-inline: auto;
+}
+
+.career-jobs__category {
+    background-color: transparent;
+    color: var(--grey-color);
+    border: none;
+    border-radius: 6px;
+    padding: 8px 30px;
+    font-weight: 500;
+    flex-grow: 1;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.career-jobs__category--active {
+    background-color: var(--red-color);
+    color: #fff;
+}
+
+.career-jobs__list {
+    overflow: hidden;
+}
+
+.career-jobs__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-align: start;
+    animation: fromLeft 0.3s ease-in-out;
+}
+
+.career-jobs__item:not(:last-child) {
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid var(--grey-color);
+    padding-bottom: 1.4rem;
+}
+
+.career-jobs__item__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.career-jobs__item__keys {
+    font-size: 14px;
+    color: var(--grey-color);
+}
+
+.career-jobs__item__btn {
+    border-radius: 10px;
+}
+
+.career-jobs__list--empty {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--red-color);
+    animation: fromLeft 0.3s ease-in-out;
+}
+
+@keyframes fromLeft {
+    0% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 851px) {
+    .career-hero {
+        background-image: none;
+    }
+
+    .career-hero__text {
+        width: 100%;
+    }
+
+    .career-hero__btn {
+        width: fit-content;
+    }
+
+    .career-jobs__categories {
+        width: 100%;
+        gap: 4px;
+        justify-content: flex-start;
+        border: none;
+        margin-bottom: 3rem;
+    }
+
+    .career-jobs__category {
+        padding: 4px 14px;
+        border: 0.5px solid var(--grey-color);
+        flex-grow: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .career-hero__title {
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+
+    .career-hero__text {
+        font-size: 18px;
+        margin-bottom: 2rem;
+    }
+
+    .career-why__title,
+    .career-jobs__title {
+        font-size: 36px;
+    }
+
+    .career-why__text,
+    .career-jobs__text,
+    .career-jobs__list--empty {
+        font-size: 16px;
+    }
+
+    .career-why__cards {
+        justify-content: center;
+    }
+
+    .career-jobs__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .career-jobs__item__title {
+        font-size: 20px;
+    }
+
+    .career-jobs__item__btn {
+        font-size: 14px;
+    }
+}

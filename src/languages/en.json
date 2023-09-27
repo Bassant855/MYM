@@ -65,6 +65,51 @@
             "copy": "2021 MYM - All rights reserved."
         }
     },
+    "career": {
+        "hero": {
+            "title": "Work With Us",
+            "para": "We are Make Your Miracle startup company & We are ready for new talent to join our team ",
+            "btn": "View Jobs"
+        },
+        "why": {
+            "title": {
+                "red-text": "Why Work ",
+                "white-text": "With Us?"
+            },
+            "text": "Apply now and develop your skills and abilities",
+            "cards": {
+                "card_1": {
+                    "title": "Rapid Growth and Learning",
+                    "text": "Joining us means you'll be part of a dynamic team that's constantly evolving, learning, and expanding their skillsets."
+                },
+                "card_2": {
+                    "title": "Varied Domains",
+                    "text": "We excel in web design, mobile applications, front-end, back-end, flutter, and UI/UX"
+                },
+                "card_3": {
+                    "title": "Collaborative Environment",
+                    "text": "You'll collaborate with talented individuals who share your passion for software development"
+                }
+            }
+        },
+        "jobs": {
+            "title": {
+                "black-text": "Open ",
+                "red-text": "Positions"
+            },
+            "text": "Apply now and develop your skills and abilities",
+            "categories": {
+                "category_1": "All",
+                "category_2": "Designers",
+                "category_3": "Mobile Developer",
+                "category_4": "Web Developer",
+                "category_5": "Non Technical",
+                "category_6": "Others"
+            },
+            "btn": "Apply Now",
+            "emptyMsg": "Sorry, No Jobs Found"
+        }
+    },
     "home-service" : {
         "serv-head":"Our",
         "services-word":" Services",
@@ -139,6 +184,7 @@
         "examination-content": "We will check the code and secure it from vulnerabilities",
         "puplish-title": "Pubilsh",
         "puplish-content": "We will upload and explain the application or website so you can start making profits"
+
     }
 }
 }
