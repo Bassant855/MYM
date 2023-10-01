@@ -213,5 +213,24 @@
         "port-hover-btn": "See Details",
         "port-btn": "Explore all",
         "not-fount": "Not Found!"
-    }
+    },
+    "Projects":
+    {
+       "title": {
+           "black-text": "Our ",
+           "red-text": "Portfolio"
+       },
+           "All":"All",
+           "Designers":"Designers",
+           "Mobile-Developer":"Mobile Developer",
+           "web-developer":"web developer",
+           "Others":"Others",
+           "Flutter":"Flutter",
+           "UI-UX":"UI-UX",
+           "Graphic-Designer":"Graphic Designer",
+           "Graphic":"Graphic",
+           "Our-Portfolio":"Our  Portfolio",
+           "Discover-our-most-important-projects-in-the-past-years":"Discover our most important projects in the past years"
+       
+   }
 }

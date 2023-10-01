@@ -213,5 +213,22 @@
     "port-hover-btn": "شاهد التفاصيل",
     "port-btn": " استكشف الكل",
     "not-fount": "لا يوجد!"
-  }
+  },
+  "Projects":
+  {
+     "title": {
+         "black-text": "معرض ",
+         "red-text": "أعمالنا"
+     },
+     "All": "الكل",
+     "Designers": "المصممون",
+     "Mobile-Developer": "مطورين تطبيقات محمول",
+     "web-developer": "مطورين الويب",
+     "Others": "أخرى",
+     "Flutter": "فلاتر",
+     "UI-UX": "واجهة المستخدم وتجربة المستخدم",
+     "Graphic-Designer": "مصمم جرافيك",
+     "Graphic": "جرافيك",
+     "Discover-our-most-important-projects-in-the-past-years": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة"
+   }
 }
