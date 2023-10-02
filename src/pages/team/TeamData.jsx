@@ -5,44 +5,67 @@ import img3 from '../../assets/Our Team/Image(3).png';
 import icon from '../../assets/Our Team/icons/Icon.svg'
 import icon1 from '../../assets/Our Team/icons/Icon (1).svg'
 import icon2 from '../../assets/Our Team/icons/Icon (2).svg'
-import { Text } from '../../containers/Languages';
 export const team=[
-    {id:1, profile:img, name:"Wade Warren", title:<Text tid={"team.team-data.title.founder"}/>, links:[
+    {id:1, profile:img, name:"Wade Warren", title:{
+        english:"Founder",
+        arabic:"مؤسس"
+    }, links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
     ]},
-    {id:2, profile:img1, name:"Maya Davies", title:<Text tid={"team.team-data.title.art-director"}/>, links:[
+    {id:2, profile:img1, name:"Maya Davies", title:{
+        english:"Art Director (Employee)",
+        arabic:"مدير فني ( موظف )"
+    }, links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
     ]},
-    {id:3, profile:img2, name:"Max Mitchell", title:<Text tid={"team.team-data.title.brand-strategist"}/>,links:[
+    {id:3, profile:img2, name:"Max Mitchell", title:{
+        english:"Brand Strategist",
+        arabic:"استراتيجي العلامة التجارية"
+    },links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
     ]},
-    {id:4, profile:img3, name:"Kara Perry", title:<Text tid={"team.team-data.title.graphic-designer"}/>,links:[
+    {id:4, profile:img3, name:"Kara Perry", title:{
+        english:"Graphic Designer",
+        arabic:"مصمم جرافيك"
+    },links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
     ]},
-    {id:5, profile:img, name:"Wade Warren", title:<Text tid={"team.team-data.title.founder"}/>, links:[
+    {id:5, profile:img, name:"Wade Warren", title:{
+        english:"Founder",
+        arabic:"مؤسس"
+    }, links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
     ]},
-    {id:6, profile:img1, name:"Maya Davies", title:<Text tid={"team.team-data.title.art-director"}/>, links:[
+    {id:6, profile:img1, name:"Maya Davies", title:{
+        english:"Art Director (Employee)",
+        arabic:"مدير فني ( موظف )"
+    }, links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
     ]},
-    {id:7, profile:img2, name:"Max Mitchell", title:<Text tid={"team.team-data.title.brand-strategist"}/>,links:[
+    {id:7, profile:img2, name:"Max Mitchell", title:{
+        english:"Brand Strategist",
+        arabic:"استراتيجي العلامة التجارية"
+    },links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
     ]},
-    {id:8, profile:img3, name:"Kara Perry", title:<Text tid={"team.team-data.title.graphic-designer"}/>,links:[
+    {id:8, profile:img3, name:"Kara Perry", title:{
+        english:"Graphic Designer",
+        arabic:"مصمم جرافيك"
+    },links:[
         {image:icon, link:"#"},
         {image:icon1, link:"#"},
         {image:icon2, link:"#"}
