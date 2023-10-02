@@ -44,31 +44,25 @@
     color: #fcfcfc;
 }
 
-.JOBS-why__title,
+/* .JOBS-why__title, */
 .__title {
     font-size: 50px;
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
-.JOBS-why__title--red,
 .JOBS-jobs__title--red {
     color: var(--red-color);
 }
 
-.JOBS-why__text,
+
 .JOBS-jobs__text {
     color: var(--grey-color);
     font-size: 18px;
     margin-bottom: 2rem;
 }
 
-.JOBS-why__cards {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    gap: 2rem;
-}
+
 
 .JOBS-jobs {
     padding-block: 4rem;
