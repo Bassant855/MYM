@@ -1,0 +1,85 @@
+.headContainer {
+    text-align: center;
+    margin: 20px 0;
+}
+.aboutContent,
+.missionContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    gap: 40px
+    
+}
+/* .missionContent {
+    gap: 40px;
+} */
+.aboutInfo {
+    width: 50%;
+}
+.missionImg {
+    width: 50%;
+}
+
+.largImg {
+    width:100%
+}
+
+.imgContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    /* width: 250px; */
+    width: 50%
+}
+
+.aboutInfoSmall {
+    display: none
+}
+
+@media (max-width:991px) { 
+    .aboutContent {
+        flex-direction: column;
+    }
+
+    .aboutImg {
+        order: 0
+    }
+
+    .aboutInfo {
+        order: 2
+    }
+
+    .aboutInfo {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+}
+
+
+@media (max-width:767px) {
+    .aboutImg, .aboutInfoBig {
+        display: none;
+    }
+
+    .aboutInfoSmall {
+        display: block
+    }
+
+    .aboutContent {
+        justify-content: center;
+    }
+    
+    .missionContent {
+        flex-direction: column;
+    }
+    .missionImg {
+        width: 100%;
+    }
+    .imgContainer {
+    
+        align-items: center;
+        /* width: 190px; */
+    }
+}
