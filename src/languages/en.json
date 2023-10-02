@@ -214,28 +214,6 @@
         "port-btn": "Explore all",
         "not-fount": "Not Found!"
     },
-<<<<<<< HEAD
-    "services": {
-
-    "work-procedure" :{
-        "heading": "We are here to ",
-        "heading-span": "help you",
-        "heading-content": "Our work procedure",
-        "contact-title": "Contact us",
-        "contact-content" : "Contact us and tell us anything you want to design",
-        "plan-title": "The plan",
-        "plan-content": "We will give you the complete construction steps for your project",
-        "design-title": "The Design",
-        "design-content": "Once agreed, we will give you a professional user interface design",
-        "programming-title": "Programming",
-        "programming-content": "We will write the program (code) and connect the databases",
-        "examination-title": "Final Examination",
-        "examination-content": "We will check the code and secure it from vulnerabilities",
-        "puplish-title": "Pubilsh",
-        "puplish-content": "We will upload and explain the application or website so you can start making profits"
-
-    }
-    },
     "about-us": {
         "about":"About Us",
         "about-para":"Now You can now learn about MYM",
@@ -245,8 +223,7 @@
         "mission":"Our Mission",
         "mission-para":"Learn about mym tasks and activities",
         "mission-content":"At our company, we pride ourselves on delivering attractive and professional solutions to our clients. Our team possesses extensive expertise in designing captivating user interfaces and providing unique user experiences. Whether you require advanced website development, sleek mobile applications, or comprehensive technological solutions, we offer efficient and innovative services to help you achieve your goals."
-    }
-=======
+    },
     "Projects":
     {
        "title": {
@@ -266,5 +243,4 @@
            "Discover-our-most-important-projects-in-the-past-years":"Discover our most important projects in the past years"
        
    }
->>>>>>> f9fdf40cfb5f1d3090f8a5dda9de8441f924c015
 }
