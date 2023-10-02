@@ -3,11 +3,11 @@ import React from "react";
 import TeamBox from "./TeamBox";
 
 
-const OurTeam = ({styles}) => {
+const OurTeam = ({styles,cat}) => {
     return (
         <div className={`${styles.team}`}>
                 <div className="row gy-2">
-                    <TeamBox styles={styles}/>
+                    <TeamBox styles={styles} cat={cat}/>
                 </div>
             </div>
     )

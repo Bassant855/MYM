@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { team } from "./TeamData";
 import { LanguageContext } from "../../containers/Languages";
 
-const TeamBox = ({styles}) => {
+const TeamBox = ({styles,cat}) => {
     const teams=team.map(t=>{
-        return(
+        let innerBox=
             <div key={t.id} className="col-12 col-sm-6 col-md-4 col-lg-3 pb-5">
                 <div className={`${styles.box} pb-5 position-relative`}>
                     <img className="img-fluid pb-5" src={t.profile} alt={t.name} />
@@ -29,7 +29,11 @@ const TeamBox = ({styles}) => {
                     </div>
                 </div>
             </div>
-        )
+            if(t.category==cat){
+                return innerBox;
+            }else if(cat=="all"){
+                return innerBox;
+            }
     })
     return (
         <>
