@@ -170,6 +170,30 @@
       "emptyMsg": "عذراً, لا يوجد وظائف متاحة حالياً"
     }
   },
+ "team": {
+        "heading": {
+            "title": "فريق",
+            "span": "الخبراء لدينا",
+            "description": "يهدف هذا القسم إلى أن يكون جهدًا مشتركًا"
+        },
+        "categories": {
+            "all": "الجميع",
+            "managers": "المديرين",
+            "designers": "المصممين",
+            "mobile-developer": "مطور الجوال",
+            "web-developer": "مطور ويب",
+            "non-technical": "غير فنية",
+            "others": "آحرون"
+        },
+        "team-data": {
+            "title": {
+                "founder": "مؤسس",
+                "art-director": "مدير فني ( موظف )",
+                "brand-strategist": "استراتيجي العلامة التجارية",
+                "graphic-designer": "مصمم جرافيك"
+            }
+        }
+ },
   "home-service": {
     "serv-head": "خدماتنا ",
     "services-word": " ",
