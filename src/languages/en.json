@@ -17,7 +17,12 @@
         "after-span": "Solutions",
         "para": "Your first choice to turn your idea into reality",
         "red-btn": "Have a free Consultation",
-        "trans-btn": "Contact Us"
+        "trans-btn": "Contact Us",
+        "landing-bottom": {
+            "land-head": "Our Goal",
+            "land-para": "Tell us your app idea and we will help you bring this idea to life by creating apps and a website from scratch that suits your needs with the best price and highest quality",
+            "land-social": "Our pages on social media"
+        }
     },
     "footer": {
         "main-data": {
@@ -59,5 +64,154 @@
             "terms": "Terms",
             "copy": "2021 MYM - All rights reserved."
         }
+    },
+    "services": {
+        "our-services": {
+            "main-heading": "Our ",
+            "heading-span": "Services",
+            "heading-content": "All the services you need in one place in safe hands",
+            "app-title": "App Development",
+            "app-content": "We specialize in app development using Flutter, a versatile and efficient framework. With Flutter's cross-platform capabilities, we create visually stunning and high-performance applications for both iOS and Android platforms. Our team of experienced developers leverages to build interactive and responsive user interfaces while ensuring speedy development. ",
+            "web-title": "Web Development",
+            "web-content": "We provide comprehensive web development services that encompass both frontend and backend development. Our team of skilled developers uses the latest technologies and programming languages to build user-friendly and interactive frontend interfaces that deliver an exceptional user experience. In addition, we have extensive expertise in backend development, delivering scalable and secure web applications that meet the highest standards of usability and functionality.",
+            "cyberSecurity-title": "Cyber security",
+            "cyberSecurity-content": "We provide comprehensive cyber security solutions that protect businesses from potential threats. We employ advanced threat intelligence, machine learning, and AI-driven algorithms to detect and prevent cyber-attacks before they cause damage. Our team of experienced cybersecurity professionals works closely with clients to assess their risk profile and develop tailored solutions to address their unique needs.",
+            "testing-title": "Testing",
+            "testing-content": "We specialize in providing comprehensive testing services to ensure the quality and reliability of software applications. Our team of skilled testers utilizes industry-standard methodologies and tools to conduct various types of testing, including functional, performance, security, and usability testing. We collaborate closely with clients to understand their testing requirements and deliver personalized solutions that identify and resolve software defects efficiently.",
+            "design-title": "UI/UX Design",
+            "design-content": "We provide UI/UX design services that focus on creating intuitive and engaging user experiences. Our team of talented designers works closely with clients to understand their brand and users' needs, leveraging this knowledge to produce aesthetically pleasing and functional designs. Our services range from wireframe and prototyping to full-scale UI/UX design, ensuring that we cater to our clients' needs at every stage of the design process.",
+            "graphicDesign-title": "Graphic Design",
+            "graphicDesign-content": "We offer top-notch graphic design services, combining creativity and technical expertise to deliver visually stunning and impactful designs. Our team of skilled designers specializes in creating captivating visuals that effectively communicate our clients' message and enhance their brand identity. From logos and branding materials to marketing collateral and website graphics, we provide a wide range of graphic design solutions tailored to meet the unique needs of each client."
+        },
+        "work-procedure": {
+            "heading": "We are here to ",
+            "heading-span": "help you",
+            "heading-content": "Our work procedure",
+            "contact-title": "Contact us",
+            "contact-content": "Contact us and tell us anything you want to design",
+            "plan-title": "The plan",
+            "plan-content": "We will give you the complete construction steps for your project",
+            "design-title": "The Design",
+            "design-content": "Once agreed, we will give you a professional user interface design",
+            "programming-title": "Programming",
+            "programming-content": "We will write the program (code) and connect the databases",
+            "examination-title": "Final Examination",
+            "examination-content": "We will check the code and secure it from vulnerabilities",
+            "puplish-title": "Pubilsh",
+            "puplish-content": "We will upload and explain the application or website so you can start making profits"
+        },
+        "why-us": {
+            "heading": "Why",
+            "heading-span": " Choose us",
+            "heading-content": "At MYM Go we value every customer and every new idea, because we believe they make the world better",
+            "client-title": "Client oriented",
+            "client-content": "Ensuring we understand and meet our client's specific needs and goals.",
+            "fast-title": "Fast",
+            "fast-content": "Being fast reduces time to market and allows a competitive edge.",
+            "proff-title": "Professional",
+            "proff-content": "Ensuring reliable communication, efficient project management.",
+            "quality-title": "Quality assured",
+            "quality-content": "Ensuring a reliable solution, and providing optimal performance."
+        }
+    },
+    "career": {
+        "hero": {
+            "title": "Work With Us",
+            "para": "We are Make Your Miracle startup company & We are ready for new talent to join our team ",
+            "btn": "View Jobs"
+        },
+        "why": {
+            "title": {
+                "red-text": "Why Work ",
+                "white-text": "With Us?"
+            },
+            "text": "Apply now and develop your skills and abilities",
+            "cards": {
+                "card_1": {
+                    "title": "Rapid Growth and Learning",
+                    "text": "Joining us means you'll be part of a dynamic team that's constantly evolving, learning, and expanding their skillsets."
+                },
+                "card_2": {
+                    "title": "Varied Domains",
+                    "text": "We excel in web design, mobile applications, front-end, back-end, flutter, and UI/UX"
+                },
+                "card_3": {
+                    "title": "Collaborative Environment",
+                    "text": "You'll collaborate with talented individuals who share your passion for software development"
+                }
+            }
+        },
+        "jobs": {
+            "title": {
+                "black-text": "Open ",
+                "red-text": "Positions"
+            },
+            "text": "Apply now and develop your skills and abilities",
+            "categories": {
+                "category_1": "All",
+                "category_2": "Designers",
+                "category_3": "Mobile Developer",
+                "category_4": "Web Developer",
+                "category_5": "Non Technical",
+                "category_6": "Others"
+            },
+            "btn": "Apply Now",
+            "emptyMsg": "Sorry, No Jobs Found"
+        }
+    },
+    "home-service": {
+        "serv-head": "Our",
+        "services-word": " Services",
+        "serv-para": "Explore our various tracks and services",
+        "serv-cards": {
+            "card1": {
+                "head": "Web Development",
+                "content": "We provide comprehensive web development services that encompass both frontend and backend development. Our team ......",
+                "service-hover": {
+                    "explore": "Explore",
+                    "content": "Web Development"
+                }
+            },
+            "card2": {
+                "head": "App Development",
+                "content": "We specialize in app development using Flutter, a versatile and efficient framework. With Flutter's cross-platform capabilities, we ......",
+                "service-hover": {
+                    "explore": "Explore",
+                    "content": "App Development"
+                }
+            },
+            "card3": {
+                "head": "UI/UX Design",
+                "content": "We provide UI/UX design services that focus on creating intuitive and engaging user experiences. Our team of talented designers works .....",
+                "service-hover": {
+                    "explore": "Explore",
+                    "content": "UI/UX Design"
+                }
+            },
+            "card4": {
+                "head": "Graphic Design",
+                "content": "We offer top-notch graphic design services, combining creativity and technical expertise to deliver visually stunning and impactful ......",
+                "service-hover": {
+                    "explore": "Explore",
+                    "content": "Graphic Design"
+                }
+            }
+        },
+        "serv-btn": "View all services "
+    },
+    "home-portfolio": {
+        "port-head": "Our",
+        "port-word": " Portfolio",
+        "port-para": "Discover our most important projects in the past years",
+        "port-btns": {
+            "all-port": " All ",
+            "designers": "Designers",
+            "mobile": "Mobile Developer",
+            "web": "Web developer",
+            "other": "Others"
+        },
+        "port-hover-btn": "See Details",
+        "port-btn": "Explore all",
+        "not-fount": "Not Found!"
     }
 }
