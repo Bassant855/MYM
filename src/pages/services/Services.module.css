@@ -1,0 +1,146 @@
+* {
+  font-family: Poppins;
+}
+
+/* Our services section */
+.mainHeading {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.headingContent {
+  color: var(--grey-color);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.serviceContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.serviceTitle {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.serviceContent {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Work procedure section */
+.workProcedureContainer {
+  background: #252525;
+  padding: 2rem;
+}
+.workProcedureContainer .mainHeading {
+  color: #fcfcfc;
+}
+.stepContainer {
+  width: 20%;
+}
+.count {
+  padding: 0.1rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #92929d;
+
+}
+.count span {
+  color: #ff1013;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.topBadge {
+    order: 0;
+  }
+  
+  .bottomBadge {
+    order: 1; 
+  }
+  .bottomBadge  img{
+    transform: rotate(180deg);
+  }
+.borderTop {
+  border-radius: 13.3125rem;
+  border-top: 1px dashed #ff1013;
+}
+
+.borderBottom {
+  border-radius: 13.3125rem;
+  border-bottom: 1px dashed #ff1013;
+}
+
+.stepTitle {
+  color: #fcfcfc;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.stepContent {
+  color: #92929d;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Why us section */
+.whyCard {
+  display: flex;
+  padding: 1rem 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #92929d;
+  background: #fcfcfc;
+  width: 25%;
+}
+.whyCard img {
+  border: 1px solid #92929d;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.whyInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+.whyTitle {
+  color: #030303;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.whyContent {
+  color: #92929d;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+
