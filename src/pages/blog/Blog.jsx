@@ -6,7 +6,7 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import BlogCard from "../../components/blogCard";
 import classes from "./Blog.module.css";
-import image from "../../assets/Image.jpg";
+import image from "../../assets/ImageBlog.jpg";
 import { LanguageContext } from "../../containers/Languages";
 const Blog = () => {
   const [page, setPage] = React.useState(1);
