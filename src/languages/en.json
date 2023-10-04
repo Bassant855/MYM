@@ -59,5 +59,12 @@
             "terms": "Terms",
             "copy": "2021 MYM - All rights reserved."
         }
+    },
+    "our-blog" : {
+        "our":"Our",
+        "blog":"Blog",
+        "blog-para":"Get ready to explore a new world of inspiration and knowledge with MYM",
+        "likes":"Likes",
+        "views":"Views"
     }
 }

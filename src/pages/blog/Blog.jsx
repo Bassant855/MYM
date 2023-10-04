@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
+import { Text } from "../../containers/Languages";
 import * as React from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
@@ -248,15 +249,14 @@ const Blog = () => {
   const paginatedBlogs = blogs.slice(startIndex, endIndex);
 
   return (
-    <div>
+    <div >
       <div className={`${classes["blog-container"]}`}>
         <div className={`${classes["header"]}`}>
           <h4>
-            Our <span className={`${classes["header-span"]}`}>Blog</span>
+          <Text tid="our-blog.our"/> <span className={`${classes["header-span"]}`}><Text tid="our-blog.blog"/></span>
           </h4>
           <p>
-            Get ready to explore a new world of inspiration and knowledge with
-            MYM
+            <Text tid="our-blog.blog-para"/>
           </p>
         </div>
         <div className={`${classes["containers"]}`}>

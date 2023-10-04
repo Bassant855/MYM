@@ -1,6 +1,12 @@
 import React, { useContext, useState } from "react";
 import classes from "../pages/blog/Blog.module.css";
 import { LanguageContext } from "../containers/Languages";
+import facebook from "../assets/facebook.svg";
+import linkedIn from "../assets/linkedIn.svg";
+import insta from "../assets/insta.svg";
+import twitter from "../assets/X.svg";
+import heart from "../assets/heart.svg";
+import { Text } from "../containers/Languages";
 const BlogCard = (props) => {
   const {
     nameEn,
@@ -26,7 +32,10 @@ const BlogCard = (props) => {
   return (
     <div className={`${classes["blog-card"]}`}>
       <div className={`${classes["blog-card-data-img"]}`}>
-        <img src={img} alt="blogImg" />
+        <div className={classes.imgContainer}>
+            <img src={img} alt="blogImg" />
+        </div>
+        
         <div className={`${classes["blog-card-data"]}`}>
           <div className={`${classes["blog-card-data-l1"]}`}>
             <h5>{languageContext.userLanguage === "en" ? nameEn : nameAr}</h5>
@@ -44,15 +53,15 @@ const BlogCard = (props) => {
 
       <div className={`${classes["social-data"]}`}>
         <div className={`${classes["social-data-analytics"]}`}>
-            <p><span>{likes}</span> likes</p>
-            <p><span>{views}</span> views</p>
+            <p><span>{likes}</span> <Text tid="our-blog.likes"/></p>
+            <p><span>{views}</span> <Text tid="our-blog.views"/></p>
         </div>
         <div className={`${classes["social-data-links"]}`}>
-            <div><a href={facebookLink}><img src="../assets/facebook.svg" alt="" /></a></div>
-            <div><a href={linkedInLink}><img src="../assets/linkedIn.svg" alt="" /></a></div>
-            <div><a href={instagramLink}><img src="../assets/insta.svg" alt="" /></a></div>
-            <div><a href={xLink}><img src="../assets/X.svg" alt="" /></a></div>
-            <div onClick={handleFavClick}><img src="../assets/heart.svg" alt="" /></div>
+            <div><a href={facebookLink}><img src={facebook} alt="" /></a></div>
+            <div><a href={linkedInLink}><img src={linkedIn} alt="" /></a></div>
+            <div><a href={instagramLink}><img src={insta} alt="" /></a></div>
+            <div><a href={xLink}><img src={twitter} alt="" /></a></div>
+            <button onClick={handleFavClick}><img src={heart} alt="" /></button>
         </div>
 
       </div>
