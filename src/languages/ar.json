@@ -193,6 +193,13 @@
                 "graphic-designer": "مصمم جرافيك"
             }
         }
+    },
+    "our-blog" : {
+        "our":" ",
+        "blog":"المدونة",
+        "blog-para":"استعد لاستكشاف عالم جديد من الالهام والمعرفة مع MYM",
+        "likes":"الاعجابات",
+        "views":"المشاهدات"
  },
   "home-service": {
     "serv-head": "خدماتنا ",
@@ -267,3 +274,4 @@
      "Discover-our-most-important-projects-in-the-past-years": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة"
    }
 }
+
