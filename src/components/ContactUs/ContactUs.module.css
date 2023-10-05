@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contact {
   font-size: 60px;
 }
@@ -19,3 +20,26 @@
 .w55 {
   width: 55%;
 }
+=======
+.contact {
+  font-size: 60px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.whats {
+  background-color: #55cd61;
+}
+.flag {
+  width: 35px;
+  height: 35px;
+}
+.box {
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+.w55 {
+  width: 55%;
+}
+>>>>>>> ee5173ddf2cd9cde6b458f7650d95b4d664915e5

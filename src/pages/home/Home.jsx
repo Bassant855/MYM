@@ -8,8 +8,24 @@ import Contact from "../../components/ContactUs/Contact";
 import Certificate from "../../components/Certificate/Certificate";
 import ClientsFeedback from "../../components/ClientsFeedback/ClientsFeedback";
 import Expert from "../../components/Expert/Expert";
+import Contact from "../../components/ContactUs/Contact";
+import Certificate from "../../components/Certificate/Certificate";
+import ClientsFeedback from "../../components/ClientsFeedback/ClientsFeedback";
+import Expert from "../../components/Expert/Expert";
 
 const Home = () => {
+  return (
+    <div>
+      <Landing />
+      <Service />
+      <Portfolio />
+      <Help />
+      <ClientsFeedback />
+      <Expert />
+      <Certificate />
+      <Contact />
+    </div>
+  );
   return (
     <div>
       <Landing />
