@@ -1,7 +1,7 @@
 import "./footer.css";
 import { Text } from "../../containers/Languages";
 
-import Location from "../../assets/Location.png";
+import Location from "../../assets/location.png";
 import Calling from "../../assets/Calling.png";
 import Message from "../../assets/Message.png";
 
