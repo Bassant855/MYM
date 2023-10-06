@@ -1,8 +1,8 @@
 import "./footer.css";
 import { Text } from "../../containers/Languages";
-import location from "../../assets/location.png";
-import calling from "../../assets/calling.png";
-import message from "../../assets/message.png";
+import Location from "../../assets/location.png";
+import Calling from "../../assets/calling.png";
+import Message from "../../assets/message.png";
 
 const Footer = () => {
     return (
@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="info">
                         <div style={{ width: "20px" }}>
                             <img
-                                src={location}
+                                src={Location}
                                 alt=""
                                 style={{ width: "100%" }}
                             />
@@ -24,7 +24,7 @@ const Footer = () => {
                     <div className="info">
                         <div style={{ width: "20px" }}>
                             <img
-                                src={calling}
+                                src={Calling}
                                 alt=""
                                 style={{ width: "100%" }}
                             />
@@ -34,7 +34,7 @@ const Footer = () => {
                     <div className="info">
                         <div style={{ width: "20px" }}>
                             <img
-                                src={message}
+                                src={Message}
                                 alt=""
                                 style={{ width: "100%" }}
                             />
