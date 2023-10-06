@@ -1,16 +1,64 @@
 {
-  "navbar": {
-    "home": "Home",
-    "services": "Services",
-    "projects": "Projects",
-    "career": "Career",
-    "about-us": "About Us",
-    "contact-us": "Contact Us",
-    "info-about-us": "Information about us",
-    "our-team": "Our Team",
-    "blog": "Blog",
-    "certificate": "MYM Certificate"
-  },
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Projects",
+        "career": "Career",
+        "about-us": "About Us",
+        "contact-us": "Contact Us",
+        "info-about-us": "Information about us",
+        "our-team": "Our Team",
+        "blog": "Blog",
+        "certificate": "MYM Certificate"
+    },
+    "footer": {
+        "main-data": {
+            "addres": "Al Haram 177 - Al Giza"
+        },
+        "service-data": {
+            "title": "Service",
+            "ui": "UI UX Design",
+            "mobile": " Mobile Development",
+            "motion": "Motion Graphic",
+            "web": "Web Development",
+            "marketing": "Digital Marketing",
+            "video": "Video Editing"
+        },
+        "company-data": {
+            "title": "Company",
+            "service": "Service",
+            "our-team": "Our Team",
+            "portfolio": "Portfolio",
+            "partner": "Out trusted partner"
+        },
+        "supourt-data": {
+            "title": "Supports",
+            "help": "Help Center",
+            "feed": "Feedback",
+            "contact": "Contact us",
+            "terms": "Terms conditions"
+        },
+        "social-data": {
+            "title": "Our Social Media",
+            "facebook": "Facebook",
+            "linkedin": "Linkedin",
+            "insta": "Instagram",
+            "theards": "Theards"
+        },
+        "foot-footer": {
+            "privacy": "Privacy",
+            "security": "Security",
+            "terms": "Terms",
+            "copy": "2021 MYM - All rights reserved."
+        }
+    },
+    "our-blog" : {
+        "our":"Our",
+        "blog":"Blog",
+        "blog-para":"Get ready to explore a new world of inspiration and knowledge with MYM",
+        "likes":"Likes",
+        "views":"Views"
+    },
   "landing": {
     "before-span": "Find the best",
     "span": " Software ",
@@ -22,47 +70,6 @@
       "land-head": "Our Goal",
       "land-para": "Tell us your app idea and we will help you bring this idea to life by creating apps and a website from scratch that suits your needs with the best price and highest quality",
       "land-social": "Our pages on social media"
-    }
-  },
-  "footer": {
-    "main-data": {
-      "addres": "Al Haram 177 - Al Giza"
-    },
-    "service-data": {
-      "title": "Service",
-      "ui": "UI UX Design",
-      "mobile": " Mobile Development",
-      "motion": "Motion Graphic",
-      "web": "Web Development",
-      "marketing": "Digital Marketing",
-      "video": "Video Editing"
-    },
-    "company-data": {
-      "title": "Company",
-      "service": "Service",
-      "our-team": "Our Team",
-      "portfolio": "Portfolio",
-      "partner": "Out trusted partner"
-    },
-    "supourt-data": {
-      "title": "Supports",
-      "help": "Help Center",
-      "feed": "Feedback",
-      "contact": "Contact us",
-      "terms": "Terms conditions"
-    },
-    "social-data": {
-      "title": "Our Social Media",
-      "facebook": "Facebook",
-      "linkedin": "Linkedin",
-      "insta": "Instagram",
-      "theards": "Theards"
-    },
-    "foot-footer": {
-      "privacy": "Privacy",
-      "security": "Security",
-      "terms": "Terms",
-      "copy": "2021 MYM - All rights reserved."
     }
   },
   "services": {

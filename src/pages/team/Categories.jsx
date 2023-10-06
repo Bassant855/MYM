@@ -18,4 +18,5 @@ const Categories = ({styles,handleCategories,cat}) => {
     )
 }
 
+
 export default Categories
