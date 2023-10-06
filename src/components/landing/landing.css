@@ -1,0 +1,27 @@
+.landing-bottom {
+    background-color: rgba(255, 16, 19, 0.40);
+    color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px 0;
+
+}
+.soical-cont  {
+    justify-content: center;
+}
+
+
+@media (max-width:650px) {
+    .landing-bottom .container {
+        flex-direction: column;
+        align-items: stretch;
+
+    }
+    .land-soical ,
+    .land-cont .land-para{
+        width: 100% !important;
+    }
+    .soical-cont  {
+        justify-content: start ;
+    }
+}

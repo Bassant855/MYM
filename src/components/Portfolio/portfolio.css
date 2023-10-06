@@ -1,0 +1,85 @@
+.portfolio{
+    background-color: black;
+}
+.port-btns {
+    width: fit-content;
+    border-radius: 6px;
+
+    margin: auto;
+    text-align: center;
+    border: 1px solid var(--grey-color);
+}
+.port-btns .port-btn {
+    outline: none;
+    padding: 10px 20px ;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--grey-color);
+    
+}
+ .port-btns .active {
+    background-color: var(--red-color);
+    color: #fff;
+    padding: 10px 50px; 
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+.port {
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    width: 22%;
+}
+
+.hover-port {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-port::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-105%);
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    transition: .4s;
+}
+.port:hover .hover-port::after {
+    transform: translateX(0);
+}
+.port:hover .port-hover-btn {
+    bottom: 0;
+}
+.port-hover-btn {
+    position: absolute;
+    bottom: -100%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+
+}
+.port-container {
+    justify-content: space-around;
+}
+@media (max-width:650px) {
+    .port-container {
+        justify-content: center !important;
+        
+    }
+}
+@media (max-width:767px) {
+    .port-btns {
+        width: 70%;
+        flex-direction: column;
+    }
+    .port-btns .active,
+    .port-btns .port-btn {
+        width: 100%;
+    }
+}
