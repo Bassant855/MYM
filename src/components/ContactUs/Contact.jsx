@@ -8,12 +8,14 @@ import calender from "../../assets/lucide_calendar-days.svg";
 import clock from "../../assets/tabler_clock-hour-10.svg";
 import flag from "../../assets/emojione_flag-for-egypt.svg";
 import { useFormik } from "formik";
+import { Text } from "../../containers/Languages";
 
 function Contact() {
   const handleSubmit = async () => {
     console.log("Hello");
     //api dependent
   };
+
   const formik = useFormik({
     initialValues: {
       //api dependent
@@ -29,10 +31,13 @@ function Contact() {
       <div className="container py-5">
         <div className="d-flex flex-column gap-2 align-content-center justify-content-center mb-5">
           <div className={`text-center  fw-bold fs-1`}>
-            <span className="text-danger">Contact</span> Us
+            <span className="text-danger">
+              <Text tid="Contact.title.black" />
+            </span>
+            <Text tid="Contact.title.red" />
           </div>
           <div className="text-center text-muted fs-5">
-            Contact Us 24 hours a day and speak with specializd engineers
+            <Text tid="Contact.detail-title" />
           </div>
         </div>
         <div className="container ">
@@ -44,7 +49,9 @@ function Contact() {
                 >
                   <img src={location} alt="location" />
                 </div>
-                <div className="fs-6">Go to Direction Google Maps</div>
+                <div className="fs-6">
+                  <Text tid="Contact.map" />
+                </div>
               </div>
               <div className="d-flex flex-row gap-3 mb-4 flx align-content-center align-items-center ">
                 <div
@@ -52,7 +59,9 @@ function Contact() {
                 >
                   <img src={call} alt="location" />
                 </div>
-                <div className="fs-6">+20 112 676 5371</div>
+                <div className="fs-6">
+                  <Text tid="Contact.phone" />
+                </div>
               </div>
               <div className="d-flex flex-row gap-3 mb-4 flx align-content-center align-items-center ">
                 <div
@@ -68,7 +77,9 @@ function Contact() {
                 >
                   <img src={whats} alt="location" />
                 </div>
-                <div className="fs-6">Direct Message</div>
+                <div className="fs-6">
+                  <Text tid="Contact.message" />
+                </div>
               </div>
               <div className="d-flex flex-row gap-3 mb-4 align-content-center align-items-center ">
                 <div
@@ -76,7 +87,9 @@ function Contact() {
                 >
                   <img src={calender} alt="location" />
                 </div>
-                <div className="fs-6">Working Days : Sunday - Thursday</div>
+                <div className="fs-6">
+                  <Text tid="Contact.days" />
+                </div>
               </div>
               <div className="d-flex flex-row gap-3 mb-4 align-content-center align-items-center ">
                 <div
@@ -84,7 +97,9 @@ function Contact() {
                 >
                   <img src={clock} alt="location" />
                 </div>
-                <div className="fs-6">Working Hours : 9 - 5</div>
+                <div className="fs-6">
+                  <Text tid="Contact.hours" />
+                </div>
               </div>
               <div className="d-flex flex-row gap-3 mb-4 align-content-center align-items-center ">
                 <div
@@ -92,7 +107,9 @@ function Contact() {
                 >
                   <img src={flag} alt="location" />
                 </div>
-                <div className="fs-6">Al Haram 177 - Al Giza</div>
+                <div className="fs-6">
+                  <Text tid="Contact.location" />
+                </div>
               </div>
             </div>
 
@@ -103,7 +120,7 @@ function Contact() {
                 <div className="d-flex flex-column flex-lg-row  gap-2 ">
                   <div className="d-flex flex-column gap-2 col-lg-6 col-md-12">
                     <label htmlFor="exampleInputEmail1" className="form-label">
-                      First Name
+                      <Text tid="Contact.first" />
                     </label>
                     <input
                       type="text"
@@ -117,7 +134,7 @@ function Contact() {
                   </div>
                   <div className="d-flex flex-column gap-2 col-lg-6 col-md-12">
                     <label htmlFor="exampleInputEmail2" className="form-label">
-                      Second Name
+                      <Text tid="Contact.last" />
                     </label>
                     <input
                       type="text"
@@ -134,7 +151,7 @@ function Contact() {
                 <div className="d-flex flex-column flex-lg-row mt-3 gap-2 w-100 justify-content-between">
                   <div className="d-flex flex-column gap-2 col-lg-6 col-md-12">
                     <label htmlFor="exampleInputEmail1" className="form-label">
-                      Email
+                      <Text tid="Contact.Email" />
                     </label>
                     <input
                       type="email"
@@ -148,7 +165,7 @@ function Contact() {
                   </div>
                   <div className="d-flex flex-column gap-2 col-lg-6 col-md-12">
                     <label htmlFor="exampleInputEmail2" className="form-label">
-                      Phone Number
+                      <Text tid="Contact.Phone" />
                     </label>
                     <input
                       type="text"
@@ -163,13 +180,12 @@ function Contact() {
                 </div>
                 <div className="d-flex flex-column justify-content-between mt-3 gap-1">
                   <label htmlFor="message" className="form-label">
-                    Message
+                    <Text tid="Contact.msg" />
                   </label>
                   <textarea
                     className="form-control"
                     id="message"
                     rows="4"
-                    placeholder="Enter your message here..."
                   ></textarea>
                 </div>
                 <div className="ms-auto w-50 text-end">

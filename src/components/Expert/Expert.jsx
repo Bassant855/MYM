@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Text } from "../../containers/Languages";
 import Slider from "react-slick";
 import fimg from "../../assets/Avatar4.png";
 import simg from "../../assets/Avatar3.png";
@@ -115,7 +116,10 @@ function Expert() {
   return (
     <div className={`py-5 overflow-hidden`}>
       <div className={`text-center pb-5 mb-5 fs-1 fw-bold`}>
-        Our Expert <span className="text-danger">Team</span>
+        <Text tid="Expert.title.black" />
+        <span className="text-danger">
+          <Text tid="Expert.title.red" />
+        </span>
       </div>
       <div className="container col-lg-9 col-md-10 col-sm-12 m-auto">
         <Slider {...settings}>

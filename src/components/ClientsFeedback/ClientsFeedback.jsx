@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./ClientsFeedback.module.css";
+import { Text } from "../../containers/Languages";
 import Slider from "react-slick";
 import fimg from "../../assets/Avatar4.png";
 import simg from "../../assets/Avatar3.png";
@@ -72,7 +73,10 @@ function ClientsFeedback() {
   return (
     <div className={`py-3 my-3 ${style.bg} overflow-hidden`}>
       <div className="mt-5 py-1  text-center fw-bold fs-1 ">
-        Client's <span className="fColor">Feedback</span>
+        <Text tid="Client.title.black" />
+        <span className={`${style.fColor}`}>
+          <Text tid="Client.title.red" />
+        </span>
       </div>
       <div className={`${style.py}  col-9  m-auto`}>
         <Slider {...settings}>
