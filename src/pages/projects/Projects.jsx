@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import classes from "./Projects.module.css";
 import { LanguageContext, Text } from "../../containers/Languages";
 import img from "../../assets/Image.png";
-import linked from "../../assets/icon.png";
+import linked from "../../assets/Icon.png";
 import { Container, Image, TabContainer } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const DUMMY_DATA = [
