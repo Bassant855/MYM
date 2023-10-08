@@ -2,10 +2,6 @@ import img from '../../assets/Our Team/Image.png';
 import img1 from '../../assets/Our Team/Image (1).png';
 import img2 from '../../assets/Our Team/Image (2).png';
 import img3 from '../../assets/Our Team/Image(3).png';
-// import icon from '../../assets/Our Team/icons/Icon.svg'
-// import icon1 from '../../assets/Our Team/icons/Icon (1).svg'
-// import icon2 from '../../assets/Our Team/icons/Icon (2).svg'
-// import { Text } from '../../containers/Languages';
 class Employee{
     constructor (id,profilePicture,name,name_ar,title,title_ar,section,email,facebook,linkedin,github,behance){
         this.id= id,
