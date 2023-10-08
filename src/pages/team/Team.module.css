@@ -12,9 +12,8 @@
     border-radius: 0.75rem 0.75rem 0rem 0rem;
     box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.15);
 }
-.team .box .text .icons .icon{
-    width: fit-content;
-    padding: 0.7rem;
+.team .box .text .icons .icon img{
+    width: 1.8rem;
 }
 .pagination li{
     box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.15);
