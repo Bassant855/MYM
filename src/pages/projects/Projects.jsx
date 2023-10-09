@@ -6,44 +6,45 @@ import { LanguageContext, Text } from "../../containers/Languages";
 import img from "../../assets/image.png";
 import { Container, Image,  TabContainer } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Pagination from "./Pagination";
+// import Pagination from "./Pagination";
 import { ProjectContext } from "../../containers/Projects";
+import ReactPaginate from 'react-paginate';
 
 
 const Projects = () => {
-  const {  DUMMY_DATA} = useContext(ProjectContext)
+  const [currentPage, setCurrentPage] = useState(0);
+  const [btnCategory, setBtnCategory] = useState("all");
+const perPage = 8; // Number of projects to display per page
+useEffect(() => {
+  const startIndex = currentPage * perPage;
+  const endIndex = startIndex + perPage;
+  if (btnCategory === 'all') {
+      setList(projectsList.slice(startIndex, endIndex));
+  } else {
+      setList(
+          projectsList
+              .filter((item) => item.category === btnCategory)
+              .slice(startIndex, endIndex)
+      );
+  }
+}, [btnCategory, currentPage]);
+const handlePageChange = (selectedPage) => {
+  setCurrentPage(selectedPage.selected);
+};
+
+  const { projectsList} = useContext(ProjectContext)
     const { userLanguage } = useContext(LanguageContext);
     
-    const [btnCategory, setBtnCategory] = useState("all");
     const [list, setList] = useState([]);
     
     const btnCategoryHandler = (e) => {
         setBtnCategory(e.target.dataset.filter);
-
     };
     
-    useEffect(() => {
-        if (btnCategory === "all") {
-            setList(displayedProjects);
-        } else {
-            setList(displayedProjects.filter((item) => item.category === btnCategory));
-        }
-    }, [btnCategory]);
-  //   // if(loading){
-  //   //     return <h2>Loading...</h2>
-  //   // }
-  const [currentPage, setCurrentPage] = useState(0); // Start from page 1
-  const projectsPerPage = 8;
-
-  // Calculate the indexes for the current page's projects
-  const indexOfLastProject = (currentPage + 1) * projectsPerPage;
-  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-  const displayedProjects = DUMMY_DATA.slice(indexOfFirstProject, indexOfLastProject);
-
-  // Handle page change
-  const handlePageChange = ({ selected }) => {
-    setCurrentPage(selected);
-  };
+   
+    // if(loading){
+    //     return <h2>Loading...</h2>
+    // }
     return (
         <Container>
       <section className={classes["JOBS-jobs"]} id="jobs">
@@ -188,8 +189,24 @@ role="button">
             )}
           </div>
         </div>
-        {/* <Pagination /> */}
       </section>
+      <div className={classes["pagination-container"]}>
+    <ReactPaginate
+        previousLabel={'Previous'}
+        nextLabel={'Next'}
+        breakLabel={'...'}
+        pageCount={Math.ceil(
+            btnCategory === 'all'
+                ? projectsList.length / perPage
+                : projectsList.filter((item) => item.category === btnCategory).length / perPage
+        )}
+        marginPagesDisplayed={2}
+        pageRangeDisplayed={5}
+        onPageChange={handlePageChange}
+        containerClassName={'pagination'}
+        activeClassName={'active'}
+    />
+</div>
     </Container>
   );
 };

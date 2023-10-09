@@ -584,36 +584,34 @@ export const ProjectProvider = ({ children }) => {
             arabic:"مطور الواجهات الخلفية"
         },  },
   ];
-  // const [projectsList, setProjectsList] = useState([]);
+  const [projectsList, setProjectsList] = useState([]);
   // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const projectsPerPage = useState(8);
-  const pagesVisited = currentPage *  projectsPerPage;
+  const [projectsPerPage, setProjectsPerPage] = useState(8);
 
-  // useEffect(() => {
+  useEffect(() => {
     // setLoading(true);
 
     
-      // setProjectsList(DUMMY_DATA);
+      setProjectsList(DUMMY_DATA);
       // setLoading(false);
-    // }, []);
+    }, []);
 
-  // const indexOfLastProject = currentPage * projectsPerPage;
-  // const indexOfFirstProject = indexOfLastProject - projectsPerPage;
-  const displayedProjects = DUMMY_DATA.slice(pagesVisited, pagesVisited+ projectsPerPage)
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = projectsList.slice(indexOfFirstProject, indexOfLastProject);
   // const pageNumbers = [];
   // for(let i=1; i<Math.ceil(projectsList.length /projectsPerPage ); i++){
   //   pageNumbers.push(i);
   // }
 const paginate = (pageNumber)=> setCurrentPage(pageNumber);
   const contextValue = {
-    // projectsList,
+    projectsList,
     // loading,
     currentPage,
     setCurrentPage,
     projectsPerPage,
-    displayedProjects,
-    // currentProjects,
+    currentProjects,
     DUMMY_DATA,
     paginate
   };
