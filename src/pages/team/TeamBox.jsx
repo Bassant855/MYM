@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import { team } from "./TeamData";
 import { LanguageContext } from "../../containers/Languages";
 import email from '../../assets/Our Team/icons/baseline-email.svg';
 import facebook from '../../assets/Our Team/icons/baseline-facebook.svg';
@@ -7,10 +6,19 @@ import linkedin from '../../assets/Our Team/icons/linkedin.svg'
 import github from '../../assets/Our Team/icons/github-filled.svg'
 import behance from '../../assets/Our Team/icons/behance.svg'
 
-const TeamBox = ({styles,cat}) => {
+const TeamBox = ({styles,cat,page,teamCat}) => {
     const icons=[email,facebook,linkedin,github,behance];
-    const teams=team.map(t=>{
-        let innerBox=
+
+    const teamData=[];
+    for(let i=(page-1)*8; i<page*8; i++){
+        if(teamCat[i]==undefined){
+            break;
+        }
+        teamData.push(teamCat[i]);
+    }
+
+    const teams=teamData.map(t=>{
+        return(
             <div key={t.id} className="col-12 col-sm-6 col-md-4 col-lg-3 pb-5">
                 <div className={`${styles.box} pb-5 position-relative`}>
 
@@ -52,11 +60,7 @@ const TeamBox = ({styles,cat}) => {
 
                 </div>
             </div>
-            if(t.section==cat){
-                return innerBox;
-            }else if(cat=="all"){
-                return innerBox;
-            }
+        )
     })
     return (
         <>

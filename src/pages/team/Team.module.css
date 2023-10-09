@@ -15,10 +15,14 @@
 .team .box .text .icons .icon img{
     width: 1.8rem;
 }
-.pagination li{
+.pagination li:not(.break){
     box-shadow: 0px 2px 8px 1px rgba(0, 0, 0, 0.15);
 }
-.pagination li.active{
+.pagination li a.active{
     background-color: var(--red-color);
     color: var(--white-color);
+}
+.pagination li .disabled{
+    color: var(--grey-color) !important;
+    cursor: not-allowed;
 }
