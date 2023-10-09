@@ -1,64 +1,64 @@
 {
-    "navbar": {
-        "home": "Home",
-        "services": "Services",
-        "projects": "Projects",
-        "career": "Career",
-        "about-us": "About Us",
-        "contact-us": "Contact Us",
-        "info-about-us": "Information about us",
-        "our-team": "Our Team",
-        "blog": "Blog",
-        "certificate": "MYM Certificate"
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "career": "Career",
+    "about-us": "About Us",
+    "contact-us": "Contact Us",
+    "info-about-us": "Information about us",
+    "our-team": "Our Team",
+    "blog": "Blog",
+    "certificate": "MYM Certificate"
+  },
+  "footer": {
+    "main-data": {
+      "addres": "Al Haram 177 - Al Giza"
     },
-    "footer": {
-        "main-data": {
-            "addres": "Al Haram 177 - Al Giza"
-        },
-        "service-data": {
-            "title": "Service",
-            "ui": "UI UX Design",
-            "mobile": " Mobile Development",
-            "motion": "Motion Graphic",
-            "web": "Web Development",
-            "marketing": "Digital Marketing",
-            "video": "Video Editing"
-        },
-        "company-data": {
-            "title": "Company",
-            "service": "Service",
-            "our-team": "Our Team",
-            "portfolio": "Portfolio",
-            "partner": "Out trusted partner"
-        },
-        "supourt-data": {
-            "title": "Supports",
-            "help": "Help Center",
-            "feed": "Feedback",
-            "contact": "Contact us",
-            "terms": "Terms conditions"
-        },
-        "social-data": {
-            "title": "Our Social Media",
-            "facebook": "Facebook",
-            "linkedin": "Linkedin",
-            "insta": "Instagram",
-            "theards": "Theards"
-        },
-        "foot-footer": {
-            "privacy": "Privacy",
-            "security": "Security",
-            "terms": "Terms",
-            "copy": "2021 MYM - All rights reserved."
-        }
+    "service-data": {
+      "title": "Service",
+      "ui": "UI UX Design",
+      "mobile": " Mobile Development",
+      "motion": "Motion Graphic",
+      "web": "Web Development",
+      "marketing": "Digital Marketing",
+      "video": "Video Editing"
     },
-    "our-blog" : {
-        "our":"Our",
-        "blog":"Blog",
-        "blog-para":"Get ready to explore a new world of inspiration and knowledge with MYM",
-        "likes":"Likes",
-        "views":"Views"
+    "company-data": {
+      "title": "Company",
+      "service": "Service",
+      "our-team": "Our Team",
+      "portfolio": "Portfolio",
+      "partner": "Out trusted partner"
     },
+    "supourt-data": {
+      "title": "Supports",
+      "help": "Help Center",
+      "feed": "Feedback",
+      "contact": "Contact us",
+      "terms": "Terms conditions"
+    },
+    "social-data": {
+      "title": "Our Social Media",
+      "facebook": "Facebook",
+      "linkedin": "Linkedin",
+      "insta": "Instagram",
+      "theards": "Theards"
+    },
+    "foot-footer": {
+      "privacy": "Privacy",
+      "security": "Security",
+      "terms": "Terms",
+      "copy": "2021 MYM - All rights reserved."
+    }
+  },
+  "our-blog": {
+    "our": "Our",
+    "blog": "Blog",
+    "blog-para": "Get ready to explore a new world of inspiration and knowledge with MYM",
+    "likes": "Likes",
+    "views": "Views"
+  },
   "landing": {
     "before-span": "Find the best",
     "span": " Software ",
@@ -121,157 +121,197 @@
       "quality-content": "Ensuring a reliable solution, and providing optimal performance."
     }
   },
-    "career": {
-      "hero": {
-        "title": "Work With Us",
-        "para": "We are Make Your Miracle startup company & We are ready for new talent to join our team ",
-        "btn": "View Jobs"
+  "career": {
+    "hero": {
+      "title": "Work With Us",
+      "para": "We are Make Your Miracle startup company & We are ready for new talent to join our team ",
+      "btn": "View Jobs"
+    },
+    "why": {
+      "title": {
+        "red-text": "Why Work ",
+        "white-text": "With Us?"
       },
-      "why": {
-        "title": {
-          "red-text": "Why Work ",
-          "white-text": "With Us?"
+      "text": "Apply now and develop your skills and abilities",
+      "cards": {
+        "card_1": {
+          "title": "Rapid Growth and Learning",
+          "text": "Joining us means you'll be part of a dynamic team that's constantly evolving, learning, and expanding their skillsets."
         },
-        "text": "Apply now and develop your skills and abilities",
-        "cards": {
-          "card_1": {
-            "title": "Rapid Growth and Learning",
-            "text": "Joining us means you'll be part of a dynamic team that's constantly evolving, learning, and expanding their skillsets."
-          },
-          "card_2": {
-            "title": "Varied Domains",
-            "text": "We excel in web design, mobile applications, front-end, back-end, flutter, and UI/UX"
-          },
-          "card_3": {
-            "title": "Collaborative Environment",
-            "text": "You'll collaborate with talented individuals who share your passion for software development"
-          }
+        "card_2": {
+          "title": "Varied Domains",
+          "text": "We excel in web design, mobile applications, front-end, back-end, flutter, and UI/UX"
+        },
+        "card_3": {
+          "title": "Collaborative Environment",
+          "text": "You'll collaborate with talented individuals who share your passion for software development"
         }
-      },
-      "jobs": {
-        "title": {
-          "black-text": "Open ",
-          "red-text": "Positions"
-        },
-        "text": "Apply now and develop your skills and abilities",
-        "categories": {
-          "category_1": "All",
-          "category_2": "Designers",
-          "category_3": "Mobile Developer",
-          "category_4": "Web Developer",
-          "category_5": "Non Technical",
-          "category_6": "Others"
-        },
-        "btn": "Apply Now",
-        "emptyMsg": "Sorry, No Jobs Found"
       }
     },
-    "home-service": {
-      "serv-head": "Our",
-      "services-word": " Services",
-      "serv-para": "Explore our various tracks and services",
-      "serv-cards": {
-        "card1": {
-          "head": "Web Development",
-          "content": "We provide comprehensive web development services that encompass both frontend and backend development. Our team ......",
-          "service-hover": {
-            "explore": "Explore",
-            "content": "Web Development"
-          }
-        },
-        "card2": {
-          "head": "App Development",
-          "content": "We specialize in app development using Flutter, a versatile and efficient framework. With Flutter's cross-platform capabilities, we ......",
-          "service-hover": {
-            "explore": "Explore",
-            "content": "App Development"
-          }
-        },
-        "card3": {
-          "head": "UI/UX Design",
-          "content": "We provide UI/UX design services that focus on creating intuitive and engaging user experiences. Our team of talented designers works .....",
-          "service-hover": {
-            "explore": "Explore",
-            "content": "UI/UX Design"
-          }
-        },
-        "card4": {
-          "head": "Graphic Design",
-          "content": "We offer top-notch graphic design services, combining creativity and technical expertise to deliver visually stunning and impactful ......",
-          "service-hover": {
-            "explore": "Explore",
-            "content": "Graphic Design"
-          }
+    "jobs": {
+      "title": {
+        "black-text": "Open ",
+        "red-text": "Positions"
+      },
+      "text": "Apply now and develop your skills and abilities",
+      "categories": {
+        "category_1": "All",
+        "category_2": "Designers",
+        "category_3": "Mobile Developer",
+        "category_4": "Web Developer",
+        "category_5": "Non Technical",
+        "category_6": "Others"
+      },
+      "btn": "Apply Now",
+      "emptyMsg": "Sorry, No Jobs Found"
+    }
+  },
+  "home-service": {
+    "serv-head": "Our",
+    "services-word": " Services",
+    "serv-para": "Explore our various tracks and services",
+    "serv-cards": {
+      "card1": {
+        "head": "Web Development",
+        "content": "We provide comprehensive web development services that encompass both frontend and backend development. Our team ......",
+        "service-hover": {
+          "explore": "Explore",
+          "content": "Web Development"
         }
       },
-      "serv-btn": "View all services "
-    },
-"team": {
-        "heading": {
-            "title": "Our Expert",
-            "span": "TEAM",
-            "description": "This section is meant to be a mutual effort"
-        },
-        "categories": {
-            "all": "All",
-            "managers": "Managers",
-            "designers": "Designers",
-            "mobile-developer": "Mobile Developer",
-            "web-developer": "Web Developer",
-            "non-technical": "Non Technical",
-            "others": "Others"
-        },
-        "team-data": {
-            "title": {
-                "founder": "Founder",
-                "art-director": "Art Director ( Employee )",
-                "brand-strategist": "Brand Strategist",
-                "graphic-designer": "Graphic Designer"
-            }
+      "card2": {
+        "head": "App Development",
+        "content": "We specialize in app development using Flutter, a versatile and efficient framework. With Flutter's cross-platform capabilities, we ......",
+        "service-hover": {
+          "explore": "Explore",
+          "content": "App Development"
         }
-    },
-    "home-portfolio": {
-      "port-head": "Our",
-      "port-word": " Portfolio",
-      "port-para": "Discover our most important projects in the past years",
-      "port-btns": {
-        "all-port": " All ",
-        "designers": "Designers",
-        "mobile": "Mobile Developer",
-        "web": "Web developer",
-        "other": "Others"
       },
-      "port-hover-btn": "See Details",
-      "port-btn": "Explore all",
-      "not-fount": "Not Found!"
+      "card3": {
+        "head": "UI/UX Design",
+        "content": "We provide UI/UX design services that focus on creating intuitive and engaging user experiences. Our team of talented designers works .....",
+        "service-hover": {
+          "explore": "Explore",
+          "content": "UI/UX Design"
+        }
+      },
+      "card4": {
+        "head": "Graphic Design",
+        "content": "We offer top-notch graphic design services, combining creativity and technical expertise to deliver visually stunning and impactful ......",
+        "service-hover": {
+          "explore": "Explore",
+          "content": "Graphic Design"
+        }
+      }
     },
-       
-    "about-us": {
-        "about":"About Us",
-        "about-para":"Now You can now learn about MYM",
-        "about-content1":"We are a specialized software company that embarked on its journey in October 2022. We excel in the field of web design, mobile applications, and encompass various domains such as front-end, back-end, flutter, and UI/UX.",
-        "about-content2":"At our company, we pride ourselves on delivering attractive and professional solutions to our clients. Our team possesses extensive expertise in designing captivating user interfaces and providing unique user experiences. Whether you require advanced website development, sleek mobile applications, or comprehensive technological solutions, we offer efficient and innovative services to help you achieve your goals.",
-        "about-content3":"Our qualified and exceptional workforce is well-versed in front-end and back-end programming, along with modern technologies like filters and UI/UX. We are dedicated to delivering superior solutions tailored to your business needs, ensuring your success.",
-        "mission":"Our Mission",
-        "mission-para":"Learn about mym tasks and activities",
-        "mission-content":"At our company, we pride ourselves on delivering attractive and professional solutions to our clients. Our team possesses extensive expertise in designing captivating user interfaces and providing unique user experiences. Whether you require advanced website development, sleek mobile applications, or comprehensive technological solutions, we offer efficient and innovative services to help you achieve your goals."
+    "serv-btn": "View all services "
+  },
+  "team": {
+    "heading": {
+      "title": "Our Expert",
+      "span": "TEAM",
+      "description": "This section is meant to be a mutual effort"
     },
-    "Projects": {
-       "title": {
-           "black-text": "Our ",
-           "red-text": "Portfolio"
-       },
-           "All":"All",
-           "Designers":"Designers",
-           "Mobile-Developer":"Mobile Developer",
-           "web-developer":"web developer",
-           "Others":"Others",
-           "Flutter":"Flutter",
-           "UI-UX":"UI-UX",
-           "Graphic-Designer":"Graphic Designer",
-           "Graphic":"Graphic",
-           "Our-Portfolio":"Our  Portfolio",
-           "Discover-our-most-important-projects-in-the-past-years":"Discover our most important projects in the past years"
-       
-   }
+    "categories": {
+      "all": "All",
+      "managers": "Managers",
+      "designers": "Designers",
+      "mobile-developer": "Mobile Developer",
+      "web-developer": "Web Developer",
+      "non-technical": "Non Technical",
+      "others": "Others"
+    },
+    "team-data": {
+      "title": {
+        "founder": "Founder",
+        "art-director": "Art Director ( Employee )",
+        "brand-strategist": "Brand Strategist",
+        "graphic-designer": "Graphic Designer"
+      }
+    }
+  },
+  "home-portfolio": {
+    "port-head": "Our",
+    "port-word": " Portfolio",
+    "port-para": "Discover our most important projects in the past years",
+    "port-btns": {
+      "all-port": " All ",
+      "designers": "Designers",
+      "mobile": "Mobile Developer",
+      "web": "Web developer",
+      "other": "Others"
+    },
+    "port-hover-btn": "See Details",
+    "port-btn": "Explore all",
+    "not-fount": "Not Found!"
+  },
+
+  "about-us": {
+    "about": "About Us",
+    "about-para": "Now You can now learn about MYM",
+    "about-content1": "We are a specialized software company that embarked on its journey in October 2022. We excel in the field of web design, mobile applications, and encompass various domains such as front-end, back-end, flutter, and UI/UX.",
+    "about-content2": "At our company, we pride ourselves on delivering attractive and professional solutions to our clients. Our team possesses extensive expertise in designing captivating user interfaces and providing unique user experiences. Whether you require advanced website development, sleek mobile applications, or comprehensive technological solutions, we offer efficient and innovative services to help you achieve your goals.",
+    "about-content3": "Our qualified and exceptional workforce is well-versed in front-end and back-end programming, along with modern technologies like filters and UI/UX. We are dedicated to delivering superior solutions tailored to your business needs, ensuring your success.",
+    "mission": "Our Mission",
+    "mission-para": "Learn about mym tasks and activities",
+    "mission-content": "At our company, we pride ourselves on delivering attractive and professional solutions to our clients. Our team possesses extensive expertise in designing captivating user interfaces and providing unique user experiences. Whether you require advanced website development, sleek mobile applications, or comprehensive technological solutions, we offer efficient and innovative services to help you achieve your goals."
+  },
+  "Projects": {
+    "title": {
+      "black-text": "Our ",
+      "red-text": "Portfolio"
+    },
+    "All": "All",
+    "Designers": "Designers",
+    "Mobile-Developer": "Mobile Developer",
+    "web-developer": "web developer",
+    "Others": "Others",
+    "Flutter": "Flutter",
+    "UI-UX": "UI-UX",
+    "Graphic-Designer": "Graphic Designer",
+    "Graphic": "Graphic",
+    "Our-Portfolio": "Our  Portfolio",
+    "Discover-our-most-important-projects-in-the-past-years": "Discover our most important projects in the past years"
+  },
+  "Contact": {
+    "title": {
+      "black": "Contact ",
+      "red": "Us"
+    },
+    "detail-title": "Contact Us 24 hours a day and speak with specializd engineers",
+    "map": "Go to Direction Google Maps",
+    "phone": "+20 112 676 5371",
+    "mail": "myourmiracle@gmail.com",
+    "message": "Direct Message",
+    "days": "Working Days : Sunday - Thursday",
+    "hours": "Working Hours : 9 - 5",
+    "location": "Al Haram 177 - Al Giza",
+    "first": "First Name",
+    "last": "Last Name",
+    "Email": "Email",
+    "Phone": "Phone Number",
+    "msg": "Message",
+    "msghold": "Enter your message here",
+    "send": "Send Message"
+  },
+  "Certificates": {
+    "title": {
+      "red": "MYM",
+      "white": " Certificate"
+    },
+    "title-detail": "You will be able to find your certificate just enter your ID",
+    "id": "Your ID Number"
+  },
+  "Expert": {
+    "title": {
+      "red": "Team",
+      "black": "Our Expert "
+    }
+  },
+  "Client": {
+    "title": {
+      "red": "Feedback",
+      "black": "Client's "
+    }
+  }
 }
