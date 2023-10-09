@@ -220,6 +220,7 @@
            "black-text": "Our ",
            "red-text": "Portfolio"
        },
+       "emptyMsg": "Sorry, No projects Found",
            "All":"All",
            "Designers":"Designers",
            "Mobile-Developer":"Mobile Developer",
