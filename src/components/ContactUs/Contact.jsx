@@ -29,7 +29,7 @@ function Contact() {
     });
     return (
         <div className="container-fluid py-4 mb-5 ">
-            <div className="container py-5">
+            <div className="container py-5" id="contactUs">
                 <div className="d-flex flex-column gap-2 align-content-center justify-content-center mb-5">
                     <div className={`text-center  fw-bold fs-1`}>
                         <span className="red-word">
