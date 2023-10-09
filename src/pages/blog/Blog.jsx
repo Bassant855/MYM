@@ -6,7 +6,6 @@ import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import BlogCard from "../../components/blogCard";
 import classes from "./Blog.module.css";
-import image from "../../assets/ImageBlog.jpg";
 import { LanguageContext } from "../../containers/Languages";
 const Blog = () => {
   const [page, setPage] = React.useState(1);
@@ -19,224 +18,183 @@ const Blog = () => {
   const blogs = [
     {
       id: 1,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 2,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 3,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 4,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 5,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 6,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 7,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
-    },
-    {
-      id: 8,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 900,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 9,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 10,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 11,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 12,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
     {
       id: 13,
-      nameEn: "Produce UI Components",
-      nameAr: "إنتاج مكونات واجهة المستخدم",
-      date: "7 jul 2023",
-      describtionEn:
-        "Lorem ipsum dolor sit amet consectetur. Tempus faucibus pellentesque sit amet nisl commodo ullamcorper",
-      describtionAr: "هذا نص عشوائي باللغة العربية",
-      img: image,
-      views: 785,
-      likes: 800,
-      instagramLink: "https://www.instagram.com/",
-      facebookLink: "https://www.instagram.com/",
-      linkedInLink: "https://www.instagram.com/",
-      xLink: "https://www.instagram.com/",
-      isFav: true,
+      name: "Blog 1",
+      name_ar: "المدونة 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      description_ar:
+        "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+      date: "2021-01-01",
+      picture: "https://picsum.photos/200/300",
+      facebook: "https://www.facebook.com",
+      linkedin: "https://www.linkedin.com",
+      instagram: "https://www.instagram.com",
+      twitter: "https://www.twitter.com",
     },
   ];
 
@@ -249,14 +207,17 @@ const Blog = () => {
   const paginatedBlogs = blogs.slice(startIndex, endIndex);
 
   return (
-    <div >
+    <div>
       <div className={`${classes["blog-container"]}`}>
         <div className={`${classes["header"]}`}>
           <h4>
-          <Text tid="our-blog.our"/> <span className={`${classes["header-span"]}`}><Text tid="our-blog.blog"/></span>
+            <Text tid="our-blog.our" />{" "}
+            <span className={`${classes["header-span"]}`}>
+              <Text tid="our-blog.blog" />
+            </span>
           </h4>
           <p>
-            <Text tid="our-blog.blog-para"/>
+            <Text tid="our-blog.blog-para" />
           </p>
         </div>
         <div className={`${classes["containers"]}`}>
@@ -264,18 +225,15 @@ const Blog = () => {
             <BlogCard
               key={blog.id}
               id={blog.id}
-              nameAr={blog.nameAr}
-              nameEn={blog.nameEn}
-              describtionEn={blog.describtionEn}
-              describtionAr={blog.describtionAr}
-              likes={blog.likes}
-              views={blog.views}
-              isFav={blog.isFav}
-              xLink={blog.xLink}
-              instagramLink={blog.instagramLink}
-              facebookLink={blog.facebookLink}
-              linkedInLink={blog.linkedInLink}
-              img={blog.img}
+              name={blog.name}
+              name_ar={blog.name_ar}
+              description={blog.description}
+              description_ar={blog.description_ar}
+              twitter={blog.twitter}
+              instagram={blog.instagram}
+              facebook={blog.facebook}
+              linkedin={blog.linkedin}
+              picture={blog.picture}
               date={blog.date}
             />
           ))}
