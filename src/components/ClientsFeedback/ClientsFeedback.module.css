@@ -47,7 +47,7 @@
     color: white;
 }
 .fColor {
-    color: rgb(220, 53, 69);
+    color: var(--red-color);
 }
 
 

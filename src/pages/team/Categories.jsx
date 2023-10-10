@@ -1,11 +1,12 @@
 import { useState } from "react"
 import { Text } from "../../containers/Languages"
 
-const Categories = ({styles,handleCategories,cat}) => {
+const Categories = ({styles,handleCategories,cat,setPage}) => {
     const [active,setActive]=useState("all");
     const handleClick=(item)=>{
         handleCategories(item)
         setActive(item)
+        setPage(1);
     }
     const categories=["all","managers","designers","mobile-developer","web-developer","non-technical","others"].map((c,index)=>{
         return <li key={index} className={`${active==c?styles.active:""} rounded-3 p-3 m-0 flex-grow-1 d-flex align-items-center justify-content-center align-self-stretch`} role="button" onClick={()=>handleClick(c)}><Text tid={"team.categories."+c} />{cat==active}</li>

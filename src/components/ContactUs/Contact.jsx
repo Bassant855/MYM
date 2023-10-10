@@ -29,10 +29,10 @@ function Contact() {
     });
     return (
         <div className="container-fluid py-4 mb-5 ">
-            <div className="container py-5">
+            <div className="container py-5" id="contactUs">
                 <div className="d-flex flex-column gap-2 align-content-center justify-content-center mb-5">
                     <div className={`text-center  fw-bold fs-1`}>
-                        <span className="text-danger">
+                        <span className="red-word">
                             <Text tid="Contact.title.black" />
                         </span>
                         <Text tid="Contact.title.red" />
@@ -60,7 +60,8 @@ function Contact() {
                                 >
                                     <img src={call} alt="location" />
                                 </div>
-                                <div className="fs-6">
+
+                                <div className="fs-6 ltr">
                                     <Text tid="Contact.phone" />
                                 </div>
                             </div>
@@ -206,7 +207,7 @@ function Contact() {
                                         rows="4"
                                     ></textarea>
                                 </div>
-                                <div className="ms-auto w-50 text-end">
+                                <div className="ms-auto text-end">
                                     <button
                                         className="mt-3 red-btn text-white"
                                         type="submit"
