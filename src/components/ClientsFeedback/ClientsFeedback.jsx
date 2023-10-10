@@ -1,12 +1,14 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useContext } from "react";
 import style from "./ClientsFeedback.module.css";
-import { Text } from "../../containers/Languages";
+import { Text, LanguageContext } from "../../containers/Languages";
 import Slider from "react-slick";
 import fimg from "../../assets/Avatar4.png";
 import simg from "../../assets/Avatar3.png";
 function ClientsFeedback() {
+    const { userLanguage } = useContext(LanguageContext);
+
     const CustomPrevArrow = (props) => (
         <div
             className={`${style.arrow} ${style.left} justify-content-center align-content--center align-items-center`}
@@ -26,40 +28,70 @@ function ClientsFeedback() {
     );
     const arr = [
         {
-            name: "John Doe",
-            feedback:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-            image: `${fimg}`,
+            id: 1,
+            name: "Mohamed",
+            name_ar: "محمد",
+            description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            description_ar:
+                "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+
+            pictureUrl: `${fimg}`,
         },
         {
-            name: "Jane Smith",
-            feedback:
-                "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            image: `${simg}`,
+            id: 1,
+            name: "Mohamed",
+            name_ar: "محمد",
+            description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            description_ar:
+                "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+
+            pictureUrl: `${simg}`,
         },
         {
-            name: "Alice Johnson",
-            feedback:
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            image: `${fimg}`,
+            id: 2,
+            name: "Mohamed",
+            name_ar: "محمد",
+            description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            description_ar:
+                "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+
+            pictureUrl: `${simg}`,
         },
         {
-            name: "Bob Brown",
-            feedback:
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            image: `${simg}`,
+            id: 3,
+            name: "Mohamed",
+            name_ar: "محمد",
+            description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            description_ar:
+                "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+
+            pictureUrl: `${simg}`,
         },
         {
-            name: "Eva Garcia",
-            feedback:
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            image: `${fimg}`,
+            id: 4,
+            name: "Mohamed",
+            name_ar: "محمد",
+            description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            description_ar:
+                "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+
+            pictureUrl: `${fimg}`,
         },
         {
-            name: "Michael Wilson",
-            feedback:
-                "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-            image: `${simg}`,
+            id: 5,
+            name: "Mohamed",
+            name_ar: "محمد",
+            description:
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+            description_ar:
+                "خسائر اللازمة ومطالبة حدة بل. الآخر الحلفاء أن غزو, إجلاء وتنامت عدد مع. لقهر معركة لبلجيكا، بـ انه, ربع الأثنان المقيتة في, اقتصّت المحور حدة و. هذه ما طرفاً عالمية استسلام, الصين وتنامت حين ٣٠, ونتج والحزب المذابح كل جوي. أسر كارثة المشتّتون بل, وبعض وبداية الصفحة غزو قد, أي بحث تعداد الجنوب قصف المسرح واستمر الإتحاد في ذات أسيا للغزو ",
+
+            pictureUrl: `${simg}`,
         },
     ];
 
@@ -86,21 +118,32 @@ function ClientsFeedback() {
                         return (
                             <div
                                 className={`my-5 py-4 px-4 d-flex flex-column ${style.contain} w-75
-                  m-auto`}
+                  m-auto feedback-contain`}
                                 key={indx}
                             >
-                                <div className="d-flex flex-column flex-lg-row flex-md-row  align-items-center align-content-center gap-3">
+                                <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center align-content-center gap-3">
                                     <div className={`${style.image}  `}>
                                         <img
-                                            src={obj.image}
+                                            src={obj.pictureUrl}
                                             className={`w-100 ${style.image}`}
-                                            alt={obj.name}
+                                            alt={
+                                                userLanguage === "en"
+                                                    ? obj.name
+                                                    : obj.name_ar
+                                            }
                                         />
                                     </div>
-                                    <div className="fs-4">{obj.name}</div>
+                                    <div className="fs-4">
+                                        {userLanguage === "en"
+                                            ? obj.name
+                                            : obj.name_ar}
+                                    </div>
                                 </div>
                                 <div className={`mt-3 ${style.font} fs-5`}>
-                                    {obj.feedback}
+                                    {userLanguage === "en"
+                                        ? obj.description
+                                        : obj.description_ar}
+
                                 </div>
                             </div>
                         );

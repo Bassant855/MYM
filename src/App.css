@@ -22,6 +22,10 @@
     font-weight: 600;
 }
 
+.rtl .feedback-contain {
+    direction: rtl;
+}
+
 @media (max-width: 767px) {
     .btn-container {
         flex-direction: column;

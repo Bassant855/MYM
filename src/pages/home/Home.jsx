@@ -10,18 +10,18 @@ import ClientsFeedback from "../../components/ClientsFeedback/ClientsFeedback";
 import Expert from "../../components/Expert/Expert";
 
 const Home = () => {
-    return (
-        <div>
-            <Landing />
-            <Service />
-            <Portfolio />
-            <Help />
-            <ClientsFeedback />
-            <Expert />
-            <Certificate />
-            <Contact />
-        </div>
-    );
+  return (
+    <div>
+      <Landing />
+      <Service />
+      <Portfolio />
+      <Help />
+      <ClientsFeedback />
+      <Expert />
+      <Certificate />
+      <Contact />
+    </div>
+  );
 };
 
 export default Home;

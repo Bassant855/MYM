@@ -1,13 +1,17 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
-import { Text } from "../../containers/Languages";
+import React, { useState, useContext } from "react";
+import { LanguageContext, Text } from "../../containers/Languages";
+
 import Slider from "react-slick";
 import fimg from "../../assets/Avatar4.png";
 import simg from "../../assets/Avatar3.png";
 import style from "./Expert.module.css";
+
 function Expert() {
     const [indx, setIndx] = useState(0);
+
+    const { userLanguage } = useContext(LanguageContext);
 
     const CustomNextArrow = (props) => {
         const { onClick } = props;
@@ -23,6 +27,7 @@ function Expert() {
     const CustomPrevArrow = (props) => {
         const { onClick } = props;
 
+
         return (
             <div
                 className={`${style.arrow} ${style.left} justify-content-center align-content-center align-items-center`}
@@ -34,44 +39,109 @@ function Expert() {
     };
     const dummyProfiles = [
         {
-            name: "John Doe",
-            job: "Web Developer",
-            linkedin: "https://www.linkedin.com/in/johndoe",
-            github: "https://github.com/johndoe",
-            behance: "https://www.behance.net/johndoe",
-            image: `${fimg}`,
+            id: 1,
+            name: "Mohamed",
+            name_ar: "محمد",
+            email: "mail@email.com",
+            phoneNumber: "01000000000",
+            profilePicture: `${fimg}`,
+            facebook: "https://www.facebook.com",
+            linkedin: "https://www.linkedin.com",
+            github: "https://www.github.com",
+            behance: "https://www.behance.com",
+            certificate: null,
+            qrCode: null,
+            track: "Web Development",
+            title: "Frontend Developer",
+            title_ar: "مطور ويب",
+            type: "Employee",
+            section: "Web Development", // CATEGORY
+            startDate: "2021-01-01",
+            endDate: null,
         },
         {
-            name: "Jane Smith",
-            job: "Graphic Designer",
-            linkedin: "https://www.linkedin.com/in/janesmith",
-            github: "https://github.com/janesmith",
-            behance: "https://www.behance.net/janesmith",
-            image: `${simg}`,
+            id: 2,
+            name: "Ahmed Magdy",
+            name_ar: "محمد",
+            email: "mail@email.com",
+            phoneNumber: "01000000000",
+            profilePicture: `${simg}`,
+            facebook: "https://www.facebook.com",
+            linkedin: "https://www.linkedin.com",
+            github: "https://www.github.com",
+            behance: "https://www.behance.com",
+            certificate: null,
+            qrCode: null,
+            track: "Web Development",
+            title: "Frontend Developer",
+            title_ar: "مطور ويب",
+            type: "Employee",
+            section: "Web Development", // CATEGORY
+            startDate: "2021-01-01",
+            endDate: null,
         },
         {
-            name: "Alice Johnson",
-            job: "Data Scientist",
-            linkedin: "https://www.linkedin.com/in/alicejohnson",
-            github: "https://github.com/alicejohnson",
-            behance: "https://www.behance.net/alicejohnson",
-            image: `${fimg}`,
+            id: 3,
+            name: "Mohamed",
+            name_ar: "محمد",
+            email: "mail@email.com",
+            phoneNumber: "01000000000",
+            profilePicture: `${fimg}`,
+            facebook: "https://www.facebook.com",
+            linkedin: "https://www.linkedin.com",
+            github: "https://www.github.com",
+            behance: "https://www.behance.com",
+            certificate: null,
+            qrCode: null,
+            track: "Web Development",
+            title: "Frontend Developer",
+            title_ar: "مطور ويب",
+            type: "Employee",
+            section: "Web Development", // CATEGORY
+            startDate: "2021-01-01",
+            endDate: null,
         },
         {
-            name: "Bob Brown",
-            job: "UI/UX Designer",
-            linkedin: "https://www.linkedin.com/in/bobbrown",
-            github: "https://github.com/bobbrown",
-            behance: "https://www.behance.net/bobbrown",
-            image: `${simg}`,
+            id: 4,
+            name: "Ahmed Magdy",
+            name_ar: "محمد",
+            email: "mail@email.com",
+            phoneNumber: "01000000000",
+            profilePicture: `${simg}`,
+            facebook: "https://www.facebook.com",
+            linkedin: "https://www.linkedin.com",
+            github: "https://www.github.com",
+            behance: "https://www.behance.com",
+            certificate: null,
+            qrCode: null,
+            track: "Web Development",
+            title: "Frontend Developer",
+            title_ar: "مطور ويب",
+            type: "Employee",
+            section: "Web Development", // CATEGORY
+            startDate: "2021-01-01",
+            endDate: null,
         },
         {
-            name: "Eva Garcia",
-            job: "Product Manager",
-            linkedin: "https://www.linkedin.com/in/evagarcia",
-            github: "https://github.com/evagarcia",
-            behance: "https://www.behance.net/evagarcia",
-            image: `${fimg}`,
+            id: 5,
+            name: "Ali",
+            name_ar: "محمد",
+            email: "mail@email.com",
+            phoneNumber: "01000000000",
+            profilePicture: `${fimg}`,
+            facebook: "https://www.facebook.com",
+            linkedin: "https://www.linkedin.com",
+            github: "https://www.github.com",
+            behance: "https://www.behance.com",
+            certificate: null,
+            qrCode: null,
+            track: "Web Development",
+            title: "Frontend Developer",
+            title_ar: "مطور ويب",
+            type: "Employee",
+            section: "Web Development", // CATEGORY
+            startDate: "2021-01-01",
+            endDate: null,
         },
     ];
     var settings = {
@@ -119,6 +189,7 @@ function Expert() {
         <div className={`py-5 overflow-hidden`}>
             <div className={`text-center pb-5 mb-5 fs-1 fw-bold`}>
                 <Text tid="Expert.title.black" />
+                
                 <span className="red-word">
                     <Text tid="Expert.title.red" />
                 </span>
@@ -135,9 +206,13 @@ function Expert() {
                                     className={`${style.layout} d-flex rounded-circle  justify-content-center align-content-center align-items-center `}
                                 >
                                     <img
-                                        src={obj.image}
+                                        src={obj.profilePicture}
                                         className={`${style.image} w-100`}
-                                        alt={obj.name}
+                                        alt={
+                                            userLanguage === "en"
+                                                ? obj.name
+                                                : obj.name_ar
+                                        }
                                     />
                                 </div>
                             </div>
@@ -151,8 +226,12 @@ function Expert() {
                     key={indx}
                 >
                     <div className="d-flex flex-column justify-content-center align-items-center align-content-center gap-2">
-                        <div className=" red-word fs-3 fw-bold">{obj.name}</div>
-                        <div className="text-muted fs-4">{obj.job}</div>
+                        <div className="red-word fs-3 fw-bold">
+                            {userLanguage === "en" ? obj.name : obj.name_ar}
+                        </div>
+                        <div className="text-muted fs-4">
+                            {userLanguage === "en" ? obj.title : obj.title_ar}
+                        </div>
                     </div>
                     <div className="mt-3 d-flex flex-row gap-5 justify-content-center align-items-center align-content-center ">
                         <a
