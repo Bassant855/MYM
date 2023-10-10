@@ -60,6 +60,7 @@ function Contact() {
                                 >
                                     <img src={call} alt="location" />
                                 </div>
+
                                 <div className="fs-6 ltr">
                                     <Text tid="Contact.phone" />
                                 </div>
@@ -211,7 +212,7 @@ function Contact() {
                                         className="mt-3 red-btn text-white"
                                         type="submit"
                                     >
-                                        Send Message
+                                        <Text tid="Contact.send" />
                                     </button>
                                 </div>
                             </form>
