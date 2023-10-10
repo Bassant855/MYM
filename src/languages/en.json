@@ -228,7 +228,8 @@
         "brand-strategist": "Brand Strategist",
         "graphic-designer": "Graphic Designer"
       }
-    }
+    },
+    "emptyMsg": "Sorry, No Employees Found"
   },
   "home-portfolio": {
     "port-head": "Our",
@@ -315,3 +316,4 @@
     }
   }
 }
+
