@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState, useContext } from "react";
 import { LanguageContext, Text } from "../../containers/Languages";
+
 import Slider from "react-slick";
 import fimg from "../../assets/Avatar4.png";
 import simg from "../../assets/Avatar3.png";
@@ -25,6 +26,7 @@ function Expert() {
     };
     const CustomPrevArrow = (props) => {
         const { onClick } = props;
+
 
         return (
             <div
@@ -187,7 +189,8 @@ function Expert() {
         <div className={`py-5 overflow-hidden`}>
             <div className={`text-center pb-5 mb-5 fs-1 fw-bold`}>
                 <Text tid="Expert.title.black" />
-                <span className="text-danger">
+                
+                <span className="red-word">
                     <Text tid="Expert.title.red" />
                 </span>
             </div>
@@ -223,7 +226,7 @@ function Expert() {
                     key={indx}
                 >
                     <div className="d-flex flex-column justify-content-center align-items-center align-content-center gap-2">
-                        <div className=" text-danger fs-3 fw-bold">
+                        <div className="red-word fs-3 fw-bold">
                             {userLanguage === "en" ? obj.name : obj.name_ar}
                         </div>
                         <div className="text-muted fs-4">

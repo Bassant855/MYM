@@ -209,7 +209,7 @@
         gap: 2rem;
     }
     .stepContainer {
-        width: 70%;
+        width: 100%;
     }
     .badge {
         order: 1;
@@ -220,15 +220,15 @@
     .topBadge {
         flex-direction: column;
     }
-    .firstBorder {
+    /* .firstBorder {
         border-top: none;
         border-left: 1px dashed #ff1013;
-    }
+    } */
 
-    .secondBorder {
+    /* .secondBorder {
         border-bottom: none;
         border-right: 1px dashed #ff1013;
-    }
+    } */
     .cardsContainer {
         flex-direction: column;
         gap: 0.8rem;

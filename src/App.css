@@ -16,6 +16,7 @@
 .trans-btn {
     border: 1px solid var(--red-color);
     background-color: #fff;
+    color: #000;
     border-radius: 6px;
     padding: 8px 30px;
     font-weight: 600;
