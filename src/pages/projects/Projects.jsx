@@ -12,9 +12,9 @@ import ReactPaginate from 'react-paginate';
 
 
 const Projects = () => {
-  const [currentPage, setCurrentPage] = useState(0);
-  const [btnCategory, setBtnCategory] = useState("all");
-const perPage = 8; // Number of projects to display per page
+    const { projectsList, currentPage, setCurrentPage} = useContext(ProjectContext)
+    const [btnCategory, setBtnCategory] = useState("all");
+const perPage = 8; 
 useEffect(() => {
   const startIndex = currentPage * perPage;
   const endIndex = startIndex + perPage;
@@ -30,15 +30,16 @@ useEffect(() => {
 }, [btnCategory, currentPage]);
 const handlePageChange = (selectedPage) => {
   setCurrentPage(selectedPage.selected);
+ 
 };
 
-  const { projectsList} = useContext(ProjectContext)
     const { userLanguage } = useContext(LanguageContext);
     
     const [list, setList] = useState([]);
     
     const btnCategoryHandler = (e) => {
         setBtnCategory(e.target.dataset.filter);
+        setCurrentPage(0)
     };
     
    
@@ -139,6 +140,7 @@ const handlePageChange = (selectedPage) => {
               <div className="row gy-2">
                 {list.length > 0 &&
                   list.map((job) => (
+                    
                     <div key={job.id} className="col-lg-3 col-sm-12 pb-5">
                       <div className={`box pb-5 position-relative`}>
                         <img
@@ -156,28 +158,25 @@ const handlePageChange = (selectedPage) => {
                               ? job.nameEn
                               : job.nameAr}
                           </p>
-                          {/* <span className={`grey mb-3`}>
-                            {userLanguage === "en"
-                              ? job.title.english
-                              : job.title.arabic}
-                          </span> */}
+                         
                           <div className={`icons d-flex align-items-center justify-content-center gap-3`}>
                             {job.links.map(link=>{
                                 return(
                                     <Link to={link.link} key={Date.now().toString(36) + Math.random().toString(36).substr(2)} 
                                     className={`icon border border-1 rounded-circle p-2`} style={{"border": "1px solid black"}}
 role="button">
-                                        <img className="img-fluid" src={link.image} alt="" />
+                                        <img className="
+                                        img-fluid" src={link.image} alt="" />
                                     </Link>
                                 )
                             })}
                         </div>
-                          {/* <div
-                            className={`icons d-flex align-items-center justify-content-center gap-3`}
-                          ></div> */}
+                        
                         </div>
                       </div>
                     </div>
+                    
+
                   ))}
               </div>
             </div>
@@ -190,23 +189,31 @@ role="button">
           </div>
         </div>
       </section>
+      {/* {list.length > 7 &&  */}
       <div className={classes["pagination-container"]}>
-    <ReactPaginate
-        previousLabel={'Previous'}
-        nextLabel={'Next'}
-        breakLabel={'...'}
-        pageCount={Math.ceil(
-            btnCategory === 'all'
-                ? projectsList.length / perPage
-                : projectsList.filter((item) => item.category === btnCategory).length / perPage
-        )}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={5}
-        onPageChange={handlePageChange}
-        containerClassName={'pagination'}
-        activeClassName={'active'}
-    />
+      <ReactPaginate
+   className={`pagination d-flex gap-2 justify-content-center align-items-center pb-5 mt-3`}
+   previousLabel={<div className={`${classes["pagination-button"] }`}>{'<'}</div>}
+   activeLinkClassName={`${classes["pagination-button-active"] }`}
+   nextLabel={<div className={`${classes["pagination-button"] }`}>{'>'}</div>}
+   breakLabel={'...'}
+   forcePage={currentPage}
+   pageCount={Math.ceil(
+       btnCategory === 'all'
+           ? projectsList.length / perPage
+           : projectsList.filter((item) => item.category === btnCategory).length / perPage
+   )}
+   marginPagesDisplayed={2}
+   pageRangeDisplayed={5}
+   onPageChange={handlePageChange}
+  //  containerClassName={'pagination'}
+   activeClassName={`${classes["pagination-button-active"] }`}
+   pageClassName={`${classes["pagination-button"] }`}
+/>
+
+
 </div>
+      {/* } */}
     </Container>
   );
 };

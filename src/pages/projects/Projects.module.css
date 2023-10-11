@@ -248,3 +248,24 @@
     background-color: var(--red-color);
     color: var(--white-color);
 }
+.pagination-button {
+    display: inline-block;
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid grey; /* Border style and color */
+    cursor: pointer;
+    margin: 5px; /* Add margin for spacing */
+    border-radius: 8px; 
+/* padding: 12px;     */
+background-color: white;
+
+    color: black;
+}
+
+
+.pagination-button-active {
+    background-color: #FF1013 ;; /* Background color for the active page number */
+    color: #fff; /* Text color for the active page number */
+}
