@@ -1,8 +1,8 @@
-import { useState } from 'react';
-// import {team} from './TeamData';
+import { useContext, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { useEffect } from 'react';
-const Pagination = ({styles,setPage,teamCat,page}) => {
+import { TeamContext } from './store/TeamContext';
+const Pagination = ({styles}) => {
 
     const [windowWidth, setWindowWidth] = useState(9)
     useEffect(()=>{
@@ -27,19 +27,17 @@ const Pagination = ({styles,setPage,teamCat,page}) => {
     },[windowWidth]);
 
 
-    const handlePageClick = (event) => {
-        setPage(event.selected+1);
-    };
+    const {data,handlePage} = useContext(TeamContext);
 
 
     return (
         <ReactPaginate
             breakLabel="..."
             nextLabel=">"
-            onPageChange={handlePageClick}
+            onPageChange={(e)=>handlePage(e.selected+1)}
             pageRangeDisplayed={windowWidth}
             marginPagesDisplayed={2}
-            pageCount={Math.ceil(teamCat.length/8)}
+            pageCount={Math.ceil(data.teamCat.length/8)}
             previousLabel="<"
             renderOnZeroPageCount={null}
             className={`${styles.pagination} d-flex gap-2 justify-content-center align-items-center pb-5 mt-3`}
@@ -52,7 +50,7 @@ const Pagination = ({styles,setPage,teamCat,page}) => {
             nextLinkClassName={`text-black d-block px-3 py-2`}
             disabledLinkClassName={`${styles.disabled}`}
             breakClassName={`${styles.break}`}
-            forcePage={page-1}
+            forcePage={data.page-1}
         />
     )
 }
