@@ -5,17 +5,34 @@ import facebook from '../../assets/Our Team/icons/baseline-facebook.svg';
 import linkedin from '../../assets/Our Team/icons/linkedin.svg'
 import github from '../../assets/Our Team/icons/github-filled.svg'
 import behance from '../../assets/Our Team/icons/behance.svg'
+import { useContext, useEffect, useState } from "react";
+import { TeamContext } from "./store/TeamContext";
 
-const TeamBox = ({styles,cat,page,teamCat}) => {
+const TeamBox = ({styles}) => {
+    const {data,boxesCount} = useContext(TeamContext);
     const icons=[email,facebook,linkedin,github,behance];
 
-    const teamData=[];
-    for(let i=(page-1)*8; i<page*8; i++){
-        if(teamCat[i]==undefined){
-            break;
+    useEffect(()=>{
+        boxesCount();
+    },[data.cat]);
+    
+    const [teamData,setTeamData]=useState([]);
+    useEffect(()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+        const td=[]
+        for(let i=(data.page-1)*8; i<data.page*8; i++){
+            if(data.teamCat[i]==undefined){
+                break;
+            }
+            td.push(data.teamCat[i]);
         }
-        teamData.push(teamCat[i]);
-    }
+        setTeamData(td);
+    },[data.teamCat,data.page])
+    
 
     const teams=teamData.map(t=>{
         return(

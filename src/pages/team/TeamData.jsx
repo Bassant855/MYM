@@ -2,6 +2,7 @@ import img from '../../assets/Our Team/Image.png';
 import img1 from '../../assets/Our Team/Image (1).png';
 import img2 from '../../assets/Our Team/Image (2).png';
 import img3 from '../../assets/Our Team/Image(3).png';
+
 class Employee{
     constructor (id,profilePicture,name,name_ar,title,title_ar,section,email,facebook,linkedin,github,behance){
         this.id= id,
@@ -18,6 +19,7 @@ class Employee{
         this.behance=behance
     }
 }
+
 export const team=[
     new Employee(1,img,"Wade Warren","م","Founder","مؤسس","managers","ee","ff","ll","gg","bb"),
     new Employee(2,img1,"Maya Davies","م","Art Director (Employee)","مدير فني ( موظف )","others","ee","ff","ll","gg","bb"),
