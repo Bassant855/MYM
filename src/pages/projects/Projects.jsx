@@ -46,6 +46,11 @@ const handlePageChange = (selectedPage) => {
     // if(loading){
     //     return <h2>Loading...</h2>
     // }
+    const pageCount = Math.ceil(
+      btnCategory === 'all'
+        ? projectsList.length / perPage
+        : projectsList.filter((item) => item.category === btnCategory).length / perPage
+    );
     return (
         <Container>
       <section className={classes["JOBS-jobs"]} id="jobs">
@@ -189,10 +194,10 @@ role="button">
           </div>
         </div>
       </section>
-      {/* {list.length > 7 &&  */}
-      <div className={classes["pagination-container"]}>
+      {pageCount>1 && 
       <ReactPaginate
-   className={`pagination d-flex gap-2 justify-content-center align-items-center pb-5 mt-3`}
+       
+   className={`pagination d-flex gap-2 justify-content-center  pb-5 mt-3`}
    previousLabel={<div className={`${classes["pagination-button"] }`}>{'<'}</div>}
    activeLinkClassName={`${classes["pagination-button-active"] }`}
    nextLabel={<div className={`${classes["pagination-button"] }`}>{'>'}</div>}
@@ -210,10 +215,7 @@ role="button">
    activeClassName={`${classes["pagination-button-active"] }`}
    pageClassName={`${classes["pagination-button"] }`}
 />
-
-
-</div>
-      {/* } */}
+      }
     </Container>
   );
 };
