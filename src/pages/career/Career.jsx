@@ -14,43 +14,48 @@ import ImageWhy3 from "../../assets/career_why_3.png";
 const DUMMY_DATA = [
     {
         id: 1,
-        category: "ui",
-        titleEn: "UI/UX Designer",
-        titleAr: "مصمم واجهات المستخدم",
-        keyEn: ["Senior", "Full time"],
-        keyAr: ["محترف", "دوام كامل"],
+        section: "ui",
+        name: "UI/UX Designer",
+        name_ar: "مصمم واجهات المستخدم",
+        description: "Senior | Full time",
+        description_ar: "محترف | دوام كامل",
+        googleFormUrl: "https://www.google.com",
     },
     {
         id: 2,
-        category: "web",
-        titleEn: "Frontend Developer",
-        titleAr: "مطور الواجهات الامامية",
-        keyEn: ["Remotely", "Senior", "internship paid", "Full time"],
-        keyAr: ["عن بعد", "محترف", "تدريب مدفوع", "دوام كامل"],
+        section: "web",
+        name: "Frontend Developer",
+        name_ar: "مطور الواجهات الامامية",
+        description: "Remotely | Senior | internship paid | Full time",
+        description_ar: "عن بعد | محترف | تدريب مدفوع | دوام كامل",
+        googleFormUrl: "https://www.google.com",
     },
     {
         id: 3,
-        category: "web",
-        titleEn: "Backend Developer",
-        titleAr: "مطور الواجهات الخلفية",
-        keyEn: ["Offline", "Senior", "internship paid", "Full time"],
-        keyAr: ["في الشركة", "محترف", "تدريب مدفوع", "دوام كامل"],
+        section: "web",
+        name: "Backend Developer",
+        name_ar: "مطور الواجهات الخلفية",
+        description: "Offline | Senior | internship paid | Full time",
+        description_ar: "في الشركة | محترف | تدريب مدفوع | دوام كامل",
+        googleFormUrl: "https://www.google.com",
     },
     {
         id: 4,
-        category: "web",
-        titleEn: "Backend Developer",
-        titleAr: "مطور الواجهات الخلفية",
-        keyEn: ["Remotely", "Senior", "Full time"],
-        keyAr: ["عن بعد", "محترف", "دوام كامل"],
+        section: "web",
+        name: "Backend Developer",
+        name_ar: "مطور الواجهات الخلفية",
+        description: "Remotely | Senior | Full time",
+        description_ar: "عن بعد | محترف | دوام كامل",
+        googleFormUrl: "https://www.google.com",
     },
     {
         id: 5,
-        category: "web",
-        titleEn: "Frontend Developer",
-        titleAr: "مطور الواجهات الامامية",
-        keyEn: ["Remotely", "Senior", "Full time"],
-        keyAr: ["عن بعد", "محترف", "دوام كامل"],
+        section: "web",
+        name: "Frontend Developer",
+        name_ar: "مطور الواجهات الامامية",
+        description: "Remotely | Senior | Full time",
+        description_ar: "عن بعد | محترف | دوام كامل",
+        googleFormUrl: "https://www.google.com",
     },
 ];
 
@@ -62,17 +67,19 @@ const JobItem = ({ job }) => {
             <div className={`${classes["career-jobs__item__content"]}`}>
                 <h3 className={`${classes["career-jobs__item__title"]}`}>
                     {languageContext.userLanguage === "en"
-                        ? job["titleEn"]
-                        : job["titleAr"]}
+                        ? job["name"]
+                        : job["name_ar"]}
                 </h3>
                 <p className={`${classes["career-jobs__item__keys"]}`}>
                     {languageContext.userLanguage === "en"
-                        ? job["keyEn"].join(" | ")
-                        : job["keyAr"].join(" | ")}
+                        ? job["description"]
+                        : job["description_ar"]}
                 </p>
             </div>
             <a
-                href="#"
+                href={job.googleFormUrl}
+                target="_blank"
+                rel="noreferrer"
                 className={`${classes["career-jobs__item__btn"]} red-btn`}
             >
                 <Text tid="career.jobs.btn" />
@@ -93,7 +100,7 @@ const Career = () => {
         if (btnCategory === "all") {
             setList(DUMMY_DATA);
         } else {
-            setList(DUMMY_DATA.filter((item) => item.category === btnCategory));
+            setList(DUMMY_DATA.filter((item) => item.section === btnCategory));
         }
     }, [btnCategory]);
 

@@ -130,15 +130,15 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={` d-flex justify-content-between align-items-center gap-5  ${
-                index % 2 !== 0 ? "flex-row-reverse" : ""
+              className={`${styles.serviceContainer}  ${
+                index % 2 !== 0 ? `${styles.flexReverse}` : ""
               }`}
             >
-              <div className="w-25">
+              <div className={styles.serviceImg}>
                 <img src={service.image} alt="" className="img-fluid" />
               </div>
 
-              <div className="w-75">
+              <div className={styles.serviceInfo}>
                 <p className={styles.serviceTitle}>
                   <Text tid={service.title} />
                 </p>
@@ -167,23 +167,24 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="d-flex justify-content-center flex-wrap gap-5">
+          <div className={styles.allStepsContainer}>
             {workProcedure.map((step, index) => (
               <div
                 key={index}
                 className={`d-flex flex-column align-items-center ${styles.stepContainer} `}
               >
                 <div
-                  className={`d-flex flex-column align-items-center ${
+                  className={`d-flex align-items-center ${styles.badge} ${
                     index % 2 === 0
                       ? `${styles.topBadge}`
-                      : `${styles.bottomBadge} flex-column-reverse`
+                      : `${styles.bottomBadge} `
                   }`}
                 >
+                  <img src={tipIcon} alt=""/>
                   <div className={`${styles.count} `}>
                     <span>0{index + 1}</span>
                   </div>
-                  <img src={tipIcon} alt=""/>
+                  
                 </div>
 
                 <div
@@ -191,8 +192,8 @@ const Services = () => {
                     styles.stepBorder
                   } ${
                     index % 2 === 0
-                      ? `${styles.borderTop}`
-                      : `${styles.borderBottom}`
+                      ? `${styles.firstBorder}`
+                      : `${styles.secondBorder}`
                   }`}
                 >
                   <img src={step.icon} alt="" className="w-25" />
@@ -226,9 +227,9 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="d-flex gap-3 justify-content-between">
+        <div className={` ${styles.cardsContainer} `}>
           {whyUs.map((item, index) => (
-            <div key={index} className={styles.whyCard}>
+            <div key={index} className={`${styles.whyCard}`}>
               <img src={item.icon} alt="" />
 
               <div className={styles.whyInfo}>
