@@ -4,7 +4,7 @@ import React, { useState, createContext, useContext, useEffect } from "react";
 import icon3 from "../assets/be.svg";
 import icon4 from "../assets/github.svg";
 import ln from "../assets/ln.svg";
-import img from "../assets/image.png";
+import img from "../assets/Image.png";
 
 // Define your initial data (replace this with your actual data)
 

@@ -3,7 +3,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import classes from "./Projects.module.css";
 import { LanguageContext, Text } from "../../containers/Languages";
-import img from "../../assets/image.png";
+import img from "../../assets/Image.png";
 import { Container, Image,  TabContainer } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import Pagination from "./Pagination";
