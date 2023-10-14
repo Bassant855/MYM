@@ -16,11 +16,16 @@ const Projects = () => {
         setProjectsList,
         DUMMY_DATA,
     } = useContext(ProjectContext);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     useEffect(() => {
         // setLoading(true);
         setProjectsList(DUMMY_DATA);
         // setLoading(false);
-    }, [DUMMY_DATA, setProjectsList]);
+    }, [setProjectsList]);
     const [btnCategory, setBtnCategory] = useState("all");
     const perPage = 8;
     useEffect(() => {

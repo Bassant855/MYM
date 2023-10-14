@@ -53,7 +53,10 @@ const Landing = () => {
                             <Text tid="landing.landing-bottom.land-para" />
                         </p>
                     </div>
-                    <div className="land-soical" style={{ width: "40%" }}>
+                    <div
+                        className="land-soical"
+                        style={{ width: "40%", textAlign: "center" }}
+                    >
                         <p style={{ fontSize: "20px" }}>
                             <Text tid="landing.landing-bottom.land-social" />
                         </p>
