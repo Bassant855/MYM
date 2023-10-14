@@ -216,6 +216,15 @@
     },
     "Projects":
     {
+        "text": "Apply now and develop your skills and abilities",
+        "categories": {
+            "category_1": "All",
+            "category_2": "Designers",
+            "category_3": "Mobile Developer",
+            "category_4": "Web Developer",
+            "category_5": "Non Technical",
+            "category_6": "Others"
+        },
        "title": {
            "black-text": "Our ",
            "red-text": "Portfolio"
