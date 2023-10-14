@@ -9,8 +9,13 @@ import { ProjectContext } from "../../containers/Projects";
 import ReactPaginate from "react-paginate";
 
 const Projects = () => {
-  const { projectsList, currentPage, setCurrentPage } =
+  const { projectsList, currentPage, setCurrentPage, setProjectsList, DUMMY_DATA } =
     useContext(ProjectContext);
+  useEffect(() => {
+    // setLoading(true);
+    setProjectsList(DUMMY_DATA);
+    // setLoading(false);
+  }, []);
   const [btnCategory, setBtnCategory] = useState("all");
   const perPage = 8;
   useEffect(() => {

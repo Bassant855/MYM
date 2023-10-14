@@ -216,6 +216,15 @@
   },
   "Projects":
   {
+    "text": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة",
+    "categories": {
+      "category_1": "الكل",
+      "category_2": "مصممين",
+      "category_3": "مطورو التطبيقات",
+      "category_4": "مطورو الويب",
+      "category_5": "وظائف غير تقنية",
+      "category_6": "اخرى"
+    },
      "title": {
          "black-text": "معرض ",
          "red-text": "أعمالنا"
@@ -230,7 +239,6 @@
      "Flutter": "فلاتر",
      "UI-UX": "واجهة المستخدم وتجربة المستخدم",
      "Graphic-Designer": "مصمم جرافيك",
-     "Graphic": "جرافيك",
-     "Discover-our-most-important-projects-in-the-past-years": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة"
+     "Graphic": "جرافيك"
    }
 }

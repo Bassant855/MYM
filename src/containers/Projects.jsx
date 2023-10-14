@@ -600,16 +600,14 @@ export const ProjectProvider = ({ children }) => {
   // const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(0);
 
-  useEffect(() => {
-    // setLoading(true);
-    setProjectsList(DUMMY_DATA);
-    // setLoading(false);
-  }, [projectsList]);
+  
 
   const contextValue = {
     projectsList,
     currentPage,
     setCurrentPage,
+    setProjectsList,
+    DUMMY_DATA
   };
 
   return (
