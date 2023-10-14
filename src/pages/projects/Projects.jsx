@@ -3,8 +3,8 @@
 import React, { useContext, useEffect, useState } from "react";
 import classes from "./Projects.module.css";
 import { LanguageContext, Text } from "../../containers/Languages";
-import img from "../../assets/image.png";
 import { Container } from "react-bootstrap";
+import img from "../../assets/Image.png";
 import { ProjectContext } from "../../containers/Projects";
 import ReactPaginate from "react-paginate";
 

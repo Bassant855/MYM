@@ -28,8 +28,8 @@
 .prim-info {
     display: flex;
     justify-content: space-between;
-    gap: 140px;
-    /* width: 100%; */
+    gap: 40px;
+    width: 100%;
 }
 
 .footer-heading {
