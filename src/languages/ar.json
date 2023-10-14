@@ -256,22 +256,33 @@
     "port-btn": " استكشف الكل",
     "not-fount": "لا يوجد!"
   },
-  "Projects": {
-    "title": {
-      "black-text": "معرض ",
-      "red-text": "أعمالنا"
+  "Projects":
+  {
+    "text": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة",
+    "categories": {
+      "category_1": "الكل",
+      "category_2": "مصممين",
+      "category_3": "مطورو التطبيقات",
+      "category_4": "مطورو الويب",
+      "category_5": "وظائف غير تقنية",
+      "category_6": "اخرى"
     },
-    "All": "الكل",
-    "Designers": "المصممون",
-    "Mobile-Developer": "مطورين تطبيقات محمول",
-    "web-developer": "مطورين الويب",
-    "Others": "أخرى",
-    "Flutter": "فلاتر",
-    "UI-UX": "واجهة المستخدم وتجربة المستخدم",
-    "Graphic-Designer": "مصمم جرافيك",
-    "Graphic": "جرافيك",
-    "Discover-our-most-important-projects-in-the-past-years": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة"
-  },
+     "title": {
+         "black-text": "معرض ",
+         "red-text": "أعمالنا"
+     },
+     "emptyMsg": "عذراً, لا يوجد مشاريع في هذا القسم حالياً"
+     ,
+     "All": "الكل",
+     "Designers": "المصممون",
+     "Mobile-Developer": "مطورين تطبيقات محمول",
+     "web-developer": "مطورين الويب",
+     "Others": "أخرى",
+     "Flutter": "فلاتر",
+     "UI-UX": "واجهة المستخدم وتجربة المستخدم",
+     "Graphic-Designer": "مصمم جرافيك",
+     "Graphic": "جرافيك"
+   },
   "Contact": {
     "title": {
       "black": "تواصل ",
