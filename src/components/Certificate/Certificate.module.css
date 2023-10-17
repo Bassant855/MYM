@@ -50,8 +50,5 @@
 .form-control::placeholder {
   color: #d7dcde !important;
 }
-@media screen and(max-width:) {
-  .envelope {
-    width: 300px;
-  }
-}
+
+

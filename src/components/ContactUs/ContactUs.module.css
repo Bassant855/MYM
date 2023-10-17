@@ -19,3 +19,9 @@
 .w55 {
   width: 55%;
 }
+.whatsBtn {
+  background-color: #55CD61;
+  color: #fff;
+  padding: 7px;
+  border-radius: 7px;
+}

@@ -36,6 +36,10 @@ function Certificate() {
                         </div>
                     </div>
                 </div>
+                <div style={{ textAlign:'center' }} className="c-container">
+                    <button className="red-btn" style={{width:'30%', minWidth:'fit-content'}}>Get Certificate</button>
+                </div>
+                
             </div>
         </div>
     );

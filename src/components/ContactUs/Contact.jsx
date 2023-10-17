@@ -10,6 +10,7 @@ import clock from "../../assets/tabler_clock-hour-10.svg";
 import flag from "../../assets/emojione_flag-for-egypt.svg";
 import { useFormik } from "formik";
 import { Text } from "../../containers/Languages";
+import { Link } from "react-router-dom";
 
 function Contact() {
     const handleSubmit = async () => {
@@ -82,7 +83,7 @@ function Contact() {
                                     <img src={whats} alt="location" />
                                 </div>
                                 <div className="fs-6">
-                                    <Text tid="Contact.message" />
+                                  <a href="https://wa.me/01126765371" target="_blank" className={style.whatsBtn}><Text tid="Contact.message" /></a>  
                                 </div>
                             </div>
                             <div className="d-flex flex-row gap-3 mb-4 align-content-center align-items-center ">
