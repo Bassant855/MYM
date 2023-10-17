@@ -17,10 +17,10 @@ function Expert() {
         const { onClick } = props;
         return (
             <div
-                className={`${style.arrow} ${style.right} justify-content-center align-content-center align-items-center`}
+                className={`${style.arrow} ${style.right} justify-content-center align-content-center align-items-center gap-3`}
                 onClick={onClick}
             >
-                <i className={`fa-solid fa-arrow-right ${style.icon}`}></i>
+                <i className={`fa-solid fa-arrow-right  ${style.icon}`}></i>
             </div>
         );
     };
@@ -30,7 +30,7 @@ function Expert() {
 
         return (
             <div
-                className={`${style.arrow} ${style.left} justify-content-center align-content-center align-items-center`}
+                className={`${style.arrow} ${style.left} justify-content-center align-content-center align-items-center gap-3`}
                 onClick={onClick}
             >
                 <i className={`fa-solid fa-arrow-left ${style.icon}`}></i>

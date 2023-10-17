@@ -1,9 +1,10 @@
 import "./footer.css";
 import { Text } from "../../containers/Languages";
-
+import { Link } from "react-router-dom";
 import Location from "../../assets/location.png";
 import Calling from "../../assets/Calling.png";
 import Message from "../../assets/Message.png";
+
 
 const Footer = () => {
     return (
@@ -18,9 +19,10 @@ const Footer = () => {
                                 style={{ width: "100%" }}
                             />
                         </div>
-                        <p>
+                        <a href="https://maps.app.goo.gl/MyoSef6e6njKo5sV6" target="_blank" 
+                        style={{color:'#fff'}}>
                             <Text tid="footer.main-data.addres" />
-                        </p>
+                        </a>
                     </div>
                     <div className="info">
                         <div style={{ width: "20px" }}>
@@ -40,7 +42,10 @@ const Footer = () => {
                                 style={{ width: "100%" }}
                             />
                         </div>
-                        <p>myourmiracle@gmail.com</p>
+                        <a href="mailto:myourmiracle@gmail.com" target="_blank" style={{color:'#fff'}}>
+                            myourmiracle@gmail.com
+                        </a>
+                        
                     </div>
                 </div>
 
@@ -51,34 +56,34 @@ const Footer = () => {
                         </h3>
                         <ul className="footer-list">
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to='/services' className="footer-link">
                                     <Text tid="footer.service-data.ui" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to='/services' className="footer-link">
                                     <Text tid="footer.service-data.mobile" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to='/services' className="footer-link">
                                     <Text tid="footer.service-data.motion" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to='/services'className="footer-link">
                                     <Text tid="footer.service-data.web" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to='/services' className="footer-link">
                                     <Text tid="footer.service-data.marketing" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to='/services' className="footer-link">
                                     <Text tid="footer.service-data.video" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -89,19 +94,19 @@ const Footer = () => {
                         </h3>
                         <ul className="footer-list">
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to='/services' className="footer-link">
                                     <Text tid="footer.company-data.service" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to="/team" className="footer-link">
                                     <Text tid="footer.company-data.our-team" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <Link to="/projects" className="footer-link">
                                     <Text tid="footer.company-data.portfolio" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a href="" className="footer-link">
@@ -122,12 +127,12 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <a href="#feedBack" className="footer-link">
                                     <Text tid="footer.supourt-data.feed" />
                                 </a>
                             </li>
                             <li>
-                                <a href="" className="footer-link">
+                                <a href="#contactUs" className="footer-link">
                                     <Text tid="footer.supourt-data.contact" />
                                 </a>
                             </li>

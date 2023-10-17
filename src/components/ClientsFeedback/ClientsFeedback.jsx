@@ -105,7 +105,7 @@ function ClientsFeedback() {
         nextArrow: <CustomNextArrow />,
     };
     return (
-        <div className={`py-3 my-3 ${style.bg} overflow-hidden`}>
+        <div className={`py-3 my-3 ${style.bg} overflow-hidden`} id="feedBack">
             <div className="mt-5 py-1  text-center fw-bold fs-1 ">
                 <Text tid="Client.title.black" />
                 <span className={`${style.fColor}`}>
@@ -117,11 +117,11 @@ function ClientsFeedback() {
                     {arr.map((obj, indx) => {
                         return (
                             <div
-                                className={`my-5 py-4 px-4 d-flex flex-column ${style.contain} w-75
+                                className={` d-flex flex-column ${style.contain} w-75
                   m-auto feedback-contain`}
                                 key={indx}
                             >
-                                <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center align-content-center gap-3">
+                                <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center align-content-center  gap-3">
                                     <div className={`${style.image}  `}>
                                         <img
                                             src={obj.pictureUrl}
@@ -139,7 +139,7 @@ function ClientsFeedback() {
                                             : obj.name_ar}
                                     </div>
                                 </div>
-                                <div className={`mt-3 ${style.font} fs-5`}>
+                                <div className={`my-3 pb-3 ${style.font} fs-5`}>
                                     {userLanguage === "en"
                                         ? obj.description
                                         : obj.description_ar}

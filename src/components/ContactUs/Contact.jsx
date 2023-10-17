@@ -10,7 +10,7 @@ import clock from "../../assets/tabler_clock-hour-10.svg";
 import flag from "../../assets/emojione_flag-for-egypt.svg";
 import { useFormik } from "formik";
 import { Text } from "../../containers/Languages";
-import { Link } from "react-router-dom";
+
 
 function Contact() {
     const handleSubmit = async () => {
@@ -44,17 +44,26 @@ function Contact() {
                 </div>
                 <div className="container ">
                     <div className="d-flex flex-column flex-lg-row gap-lg-5 gap-md-3 gap-3 ">
+
+                        {/* info */}
                         <div className={`col gap-3 p-3 ${style.box}`}>
+
+                            {/* google maps */}
                             <div className="d-flex flex-row gap-3 mb-4 flx align-content-center align-items-center ">
-                                <div
-                                    className={`img-contain p-1 bg-danger rounded-circle d-flex flx-column align-content-center ${style.icon}`}
-                                >
+                                <div 
+                                    className={`img-contain p-1 bg-danger rounded-circle d-flex flx-column align-content-center ${style.icon}`}>
                                     <img src={location} alt="location" />
                                 </div>
-                                <div className="fs-6">
-                                    <Text tid="Contact.map" />
+                                <div className="fs-6" style={{width:'70%'}}>
+                                    <Text tid="Contact.map"/>
+                                    <a href="https://maps.app.goo.gl/MyoSef6e6njKo5sV6" target="_blank"
+                                     style={{color:"var(--red-color)",textDecoration:"underline"}}>
+                                        <Text tid="Contact.map-direction"/>
+                                    </a>
                                 </div>
                             </div>
+
+                            {/* phone number */}
                             <div className="d-flex flex-row gap-3 mb-4 flx align-content-center align-items-center ">
                                 <div
                                     className={`img-contain p-1 bg-danger rounded-circle d-flex flx-column align-content-center ${style.icon}`}
@@ -66,6 +75,8 @@ function Contact() {
                                     <Text tid="Contact.phone" />
                                 </div>
                             </div>
+
+                            {/* mail */}
                             <div className="d-flex flex-row gap-3 mb-4 flx align-content-center align-items-center ">
                                 <div
                                     className={`img-contain p-1 bg-danger rounded-circle d-flex flx-column align-content-center ${style.icon}`}
@@ -73,9 +84,12 @@ function Contact() {
                                     <img src={message} alt="location" />
                                 </div>
                                 <div className="fs-6">
-                                    myourmiracle@gmail.com
+                                    <a href="mailto:myourmiracle@gmail.com" target="_blank"
+                                     className={style.mail} >myourmiracle@gmail.com</a>
                                 </div>
                             </div>
+
+                            {/* whatsapp */}
                             <div className="d-flex flex-row gap-3 mb-4 flx align-content-center align-items-center ">
                                 <div
                                     className={`img-contain p-1  rounded-circle d-flex flx-column align-content-center ${style.icon} ${style.whats}`}
@@ -83,9 +97,12 @@ function Contact() {
                                     <img src={whats} alt="location" />
                                 </div>
                                 <div className="fs-6">
-                                  <a href="https://wa.me/01126765371" target="_blank" className={style.whatsBtn}><Text tid="Contact.message" /></a>  
+                                  <a href="https://wa.me/+201126765371" target="_blank" className={style.whatsBtn}><Text tid="Contact.message" /></a>  
+                               
                                 </div>
                             </div>
+
+                            {/* working days */}
                             <div className="d-flex flex-row gap-3 mb-4 align-content-center align-items-center ">
                                 <div
                                     className={`img-contain p-1 bg-danger rounded-circle d-flex flx-column align-content-center ${style.icon}`}
@@ -96,6 +113,9 @@ function Contact() {
                                     <Text tid="Contact.days" />
                                 </div>
                             </div>
+
+
+                            {/* working hour */}
                             <div className="d-flex flex-row gap-3 mb-4 align-content-center align-items-center ">
                                 <div
                                     className={`img-contain p-1 bg-danger rounded-circle d-flex flx-column align-content-center ${style.icon}`}
@@ -106,6 +126,8 @@ function Contact() {
                                     <Text tid="Contact.hours" />
                                 </div>
                             </div>
+
+                                {/* address */}
                             <div className="d-flex flex-row gap-3 mb-4 align-content-center align-items-center ">
                                 <div
                                     className={`img-contain p-1  rounded-circle d-flex flx-column align-content-center ${style.flag}`}
@@ -116,6 +138,7 @@ function Contact() {
                                     <Text tid="Contact.location" />
                                 </div>
                             </div>
+
                         </div>
 
                         {/* form handling */}

@@ -69,7 +69,7 @@ const Projects = () => {
                 <div
                     className={`${classes["projects-projects__content"]} container`}
                 >
-                    <h2 className={`${classes["projects-projects__title"]}`}>
+                    <h2 className={`${classes["projects-projects__title"]}`}  style={{fontWeight:'bold', fontSize:'2.5rem'}}>
                         <Text tid={"Projects.title.black-text"} />
                         <span
                             className={`${classes["projects-projects__title--red"]}`}

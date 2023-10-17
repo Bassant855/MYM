@@ -30,6 +30,6 @@
 
 .team-empty {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: bold;
     color: var(--red-color);
 }

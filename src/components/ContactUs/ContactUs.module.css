@@ -7,6 +7,7 @@
 }
 .whats {
   background-color: #55cd61;
+ 
 }
 .flag {
   width: 35px;
@@ -24,4 +25,20 @@
   color: #fff;
   padding: 7px;
   border-radius: 7px;
+}
+.mail {
+  color: black;
+  width: 80%;
+  transition: .3s;
+}
+.mail:hover {
+  color: var(--red-color);
+}
+@media (max-width:320px) {
+  .box  {
+    width: 110%;
+  }
+  .mail {
+    font-size: 15px;
+  }
 }

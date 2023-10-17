@@ -116,14 +116,14 @@ const Services = () => {
 
     return (
         <>
-            <div className="container mt-3">
+            <div className="container mt-3" >
                 <div className="d-flex flex-column align-items-center gap-2">
-                    <p className={styles.mainHeading}>
+                    <h2 className={styles.mainHeading}  style={{fontWeight:'bold'}}>
                         <Text tid="services.our-services.main-heading" />
                         <span className="red-word">
-                            <Text tid="services.our-services.heading-span" />
+                            <Text tid="services.our-services.heading-span"  style={{fontWeight:'bold'}} />
                         </span>
-                    </p>
+                    </h2>
 
                     <p className={styles.headingContent}>
                         <Text tid="services.our-services.heading-content" />

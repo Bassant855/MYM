@@ -289,7 +289,8 @@
       "red": "Us"
     },
     "detail-title": "Contact Us 24 hours a day and speak with specializd engineers",
-    "map": "Go to Direction Google Maps",
+    "map": "Go to Direction ",
+    "map-direction":"Google Maps",
     "phone": "+20 112 676 5371",
     "mail": "myourmiracle@gmail.com",
     "message": "Direct Message",

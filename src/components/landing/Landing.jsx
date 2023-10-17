@@ -31,9 +31,9 @@ const Landing = () => {
                         <Text tid="landing.para" />
                     </p>
                     <div className="d-flex gap-3 my-5 btn-container">
-                        <button className="red-btn">
+                        <a  href="https://wa.me/+201126765371" target="_blank" className="red-btn">
                             <Text tid="landing.red-btn" />
-                        </button>
+                        </a>
                         <HashLink to="/#contactUs" className="trans-btn">
                             <Text tid="landing.trans-btn" />
                         </HashLink>
@@ -60,32 +60,32 @@ const Landing = () => {
                         <p style={{ fontSize: "20px" }}>
                             <Text tid="landing.landing-bottom.land-social" />
                         </p>
-                        <div className="soical-cont d-flex gap-3 mt-1">
-                            <a href="https://www.facebook.com/people/Make-Your-Miracle-MYM/100094065639945/">
+                        <div className="soical-cont d-flex gap-3 mt-3">
+                            <a href="https://www.facebook.com/people/Make-Your-Miracle-MYM/100094065639945/" target="_blank">
                                 <img
                                     src={face1}
-                                    style={{ width: "20px" }}
+                                    style={{ width: "25px" }}
                                     alt=""
                                 />
                             </a>
-                            <a href="https://twitter.com/MYM_Miracle">
+                            <a href="https://twitter.com/MYM_Miracle" target="_blank">
                                 <img
                                     src={face2}
                                     alt=""
-                                    style={{ width: "20px" }}
+                                    style={{ width: "25px" }}
                                 />
                             </a>
-                            <a href="https://www.instagram.com/mym_miracle/?igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                            <a href="https://www.instagram.com/mym_miracle/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
                                 <img
                                     src={face3}
                                     alt=""
-                                    style={{ width: "20px" }}
+                                    style={{ width: "25px" }}
                                 />
                             </a>
-                            <a href="https://www.linkedin.com/company/mym-make-your-miracle/?viewAsMember=true">
+                            <a href="https://www.linkedin.com/company/mym-make-your-miracle/?viewAsMember=true" target="_blank">
                                 <img
                                     src={face4}
-                                    style={{ width: "20px" }}
+                                    style={{ width: "25px" }}
                                     alt=""
                                 />
                             </a>

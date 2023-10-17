@@ -28,8 +28,8 @@
   background-color: #ff1013; /* Background color of the arrows */
   border: 1px solid #ff1013; /* Border color of the arrows */
   border-radius: 50%; /* Make the arrows circular */
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,4 +70,10 @@
 }
 .linkedin {
   color: blue;
+}
+
+@media (max-width:650px) {
+  .layout {
+    width: fit-content;
+  }
 }
