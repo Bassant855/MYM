@@ -27,7 +27,7 @@ const Navbar1 = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="m-auto gap-2">
+                    <Nav className="m-auto gap-2 my-3">
                         <NavLink to="/" className="nav-link">
                             <Text tid="navbar.home" />
                         </NavLink>

@@ -1,0 +1,44 @@
+.contact {
+  font-size: 60px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.whats {
+  background-color: #55cd61;
+ 
+}
+.flag {
+  width: 35px;
+  height: 35px;
+}
+.box {
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+.w55 {
+  width: 55%;
+}
+.whatsBtn {
+  background-color: #55CD61;
+  color: #fff;
+  padding: 7px;
+  border-radius: 7px;
+}
+.mail {
+  color: black;
+  width: 80%;
+  transition: .3s;
+}
+.mail:hover {
+  color: var(--red-color);
+}
+@media (max-width:320px) {
+  .box  {
+    width: 110%;
+  }
+  .mail {
+    font-size: 15px;
+  }
+}
