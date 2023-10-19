@@ -48,7 +48,7 @@ const Landing = () => {
                     <h4><Text tid="landing.landing-bottom.land-head"/></h4>
                     <p style={{width:"69%"}} className='land-para'><Text tid="landing.landing-bottom.land-para"/></p>
                 </div>
-                <div className="land-soical" style={{width:'30%'}}>
+                <div className="land-soical" style={{width:'40%'}}>
                     <p style={{fontSize:"20px"}} ><Text tid="landing.landing-bottom.land-social"/></p>
                     <div className="soical-cont d-flex gap-3 mt-1">
                         <a href="https://www.facebook.com/people/Make-Your-Miracle-MYM/100094065639945/"><img src={face1} style={{width:"20px"}} alt="" /></a>
