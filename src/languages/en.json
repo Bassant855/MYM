@@ -153,7 +153,7 @@
         "black-text": "Open ",
         "red-text": "Positions"
       },
-      "text": "Apply now and develop your skills and abilities",
+      "text": "Discover-our-most-important-projects-in-the-past-years",
       "categories": {
         "category_1": "All",
         "category_2": "Designers",
@@ -206,6 +206,48 @@
     },
     "serv-btn": "View all services "
   },
+  "home-portfolio": {
+    "port-head": "Our",
+    "port-word": " Portfolio",
+    "port-para": "Discover our most important projects in the past years",
+    "port-btns": {
+      "all-port": " All ",
+      "designers": "Designers",
+      "mobile": "Mobile Developer",
+      "web": "Web developer",
+      "other": "Others"
+    },
+    "port-hover-btn": "See Details",
+    "port-btn": "Explore all",
+    "not-fount": "Not Found!"
+  },
+  "Projects": {
+    "text": "Apply now and develop your skills and abilities",
+    "categories": {
+      "category_1": "All",
+      "category_2": "Designers",
+      "category_3": "Mobile Developer",
+      "category_4": "Web Developer",
+      "category_5": "Non Technical",
+      "category_6": "Others"
+    },
+    "title": {
+      "black-text": "Our ",
+      "red-text": "Portfolio"
+    },
+    "emptyMsg": "Sorry, No projects here yet!",
+        "All": "All",
+    "Designers": "Designers",
+    "Mobile-Developer": "Mobile Developer",
+    "web-developer": "web developer",
+    "Others": "Others",
+    "Flutter": "Flutter",
+    "UI-UX": "UI-UX",
+    "Graphic-Designer": "Graphic Designer",
+    "Graphic": "Graphic",
+    "Our-Portfolio": "Our  Portfolio",
+    "Discover-our-most-important-projects-in-the-past-years": "Discover our most important projects in the past years"
+  },
   "team": {
     "heading": {
       "title": "Our Expert",
@@ -231,22 +273,6 @@
     },
     "emptyMsg": "Sorry, No Employees Found"
   },
-  "home-portfolio": {
-    "port-head": "Our",
-    "port-word": " Portfolio",
-    "port-para": "Discover our most important projects in the past years",
-    "port-btns": {
-      "all-port": " All ",
-      "designers": "Designers",
-      "mobile": "Mobile Developer",
-      "web": "Web developer",
-      "other": "Others"
-    },
-    "port-hover-btn": "See Details",
-    "port-btn": "Explore all",
-    "not-fount": "Not Found!"
-  },
-
   "about-us": {
     "about": "About Us",
     "about-para": "Now You can now learn about MYM",
@@ -257,30 +283,14 @@
     "mission-para": "Learn about mym tasks and activities",
     "mission-content": "At our company, we pride ourselves on delivering attractive and professional solutions to our clients. Our team possesses extensive expertise in designing captivating user interfaces and providing unique user experiences. Whether you require advanced website development, sleek mobile applications, or comprehensive technological solutions, we offer efficient and innovative services to help you achieve your goals."
   },
-  "Projects": {
-    "title": {
-      "black-text": "Our ",
-      "red-text": "Portfolio"
-    },
-    "All": "All",
-    "Designers": "Designers",
-    "Mobile-Developer": "Mobile Developer",
-    "web-developer": "web developer",
-    "Others": "Others",
-    "Flutter": "Flutter",
-    "UI-UX": "UI-UX",
-    "Graphic-Designer": "Graphic Designer",
-    "Graphic": "Graphic",
-    "Our-Portfolio": "Our  Portfolio",
-    "Discover-our-most-important-projects-in-the-past-years": "Discover our most important projects in the past years"
-  },
   "Contact": {
     "title": {
       "black": "Contact ",
       "red": "Us"
     },
     "detail-title": "Contact Us 24 hours a day and speak with specializd engineers",
-    "map": "Go to Direction Google Maps",
+    "map": "Go to Direction ",
+    "map-direction":"Google Maps",
     "phone": "+20 112 676 5371",
     "mail": "myourmiracle@gmail.com",
     "message": "Direct Message",
