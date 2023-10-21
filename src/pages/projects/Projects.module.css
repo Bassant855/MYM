@@ -155,7 +155,7 @@
   .projects-projects_item_btn {
     font-size: 14px;
   }
-  .job-list-container {
+  .projects-list-container {
     display: flex;
 
     margin-top: 20px; 
@@ -231,9 +231,9 @@
 .grey {
   color: var(--grey-color);
 }
-.categories li.active,
-.categories li:hover {
+/* .categories button.active,
+.categories button:hover {
   transition: 0.3s;
   background-color: var(--red-color);
   color: var(--white-color);
-}
+} */

@@ -11,6 +11,7 @@ import img from "../assets/Image.png";
 // Create the context
 export const ProjectContext = createContext();
 export const ProjectProvider = ({ children }) => {
+    const baseUrl = "http://mircle51-001-site1.gtempurl.com"
     const DUMMY_DATA = [
         {
             id: 0,

@@ -257,20 +257,26 @@
     "not-fount": "لا يوجد!"
   },
   "Projects": {
+    "emptyMsg": "عذراً, لا يوجد مشاريع حالياً",
     "title": {
       "black-text": "معرض ",
       "red-text": "أعمالنا"
     },
-    "All": "الكل",
-    "Designers": "المصممون",
-    "Mobile-Developer": "مطورين تطبيقات محمول",
-    "web-developer": "مطورين الويب",
-    "Others": "أخرى",
-    "Flutter": "فلاتر",
-    "UI-UX": "واجهة المستخدم وتجربة المستخدم",
-    "Graphic-Designer": "مصمم جرافيك",
-    "Graphic": "جرافيك",
-    "Discover-our-most-important-projects-in-the-past-years": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة"
+    "subtitle": "اكتشف أهم مشاريعنا في السنوات الماضية",
+
+    "categories":
+    {
+      "category_1": "الكل",
+      "category_2": "المصممون",
+      "category_3": "مطورين تطبيقات محمول",
+      "category_4": "مطورين الويب",
+      "category_5": "أخرى",
+      "category_6": "فلاتر"
+    },
+      "UI-UX": "واجهة المستخدم وتجربة المستخدم",
+      "Graphic-Designer": "مصمم جرافيك",
+      "Graphic": "جرافيك",
+    "subtitle": "اكتشف مشاريعنا الأكثر أهميةً في السنوات السابقة"
   },
   "Contact": {
     "title": {

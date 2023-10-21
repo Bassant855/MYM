@@ -236,6 +236,7 @@
       "red-text": "Portfolio"
     },
     "emptyMsg": "Sorry, No projects here yet!",
+    
         "All": "All",
     "Designers": "Designers",
     "Mobile-Developer": "Mobile Developer",
@@ -246,7 +247,7 @@
     "Graphic-Designer": "Graphic Designer",
     "Graphic": "Graphic",
     "Our-Portfolio": "Our  Portfolio",
-    "Discover-our-most-important-projects-in-the-past-years": "Discover our most important projects in the past years"
+    "subtitle": "Discover our most important projects in the past years"
   },
   "team": {
     "heading": {
