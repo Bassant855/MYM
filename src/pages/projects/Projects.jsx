@@ -3,12 +3,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import classes from "./Projects.module.css";
 import { LanguageContext, Text } from "../../containers/Languages";
-import img from "../../assets/Image.png";
+import ln from "../../assets/ln.svg";
+import fb from "../../assets/facebook.svg";
+import github from "../../assets/github.svg";
+import be from "../../assets/be.svg";
 import { Container, Image,  TabContainer } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import Pagination from "./Pagination";
-import { ProjectContext } from "../../containers/Projects";
+// import { ProjectContext } from "../../containers/Projects";
 import ReactPaginate from 'react-paginate';
+import { ProjectContext } from "../../containers/ProjectsContext";
 
 
 const Projects = () => {
@@ -78,7 +82,7 @@ const handlePageChange = (selectedPage) => {
       <section className={classes["projects-projects"]} id="projects">
         <div className={`${classes["projects-projects__content"]} container`}>
         <div className="heading">
-            <h1 className="fw-bold"><Text tid="Projects.title.black-text" /> <span className="red-word"><Text tid="Projects.title.red-text" /></span></h1>
+            <h1 className={classes.title}><Text tid="Projects.title.black-text" /> <span className="red-word"><Text tid="Projects.title.red-text" /></span></h1>
             <p className={`${classes.grey} fw-medium pt-2`}><Text tid="Projects.subtitle" /></p>
         </div>
 
@@ -156,7 +160,7 @@ const handlePageChange = (selectedPage) => {
                       <div className={`box pb-5 position-relative`}>
                         <img
                           className="img-fluid pb-5"
-                          src={img}
+                          src={proj.picture}
                           alt={proj.name}
                         />
                         <div
@@ -166,21 +170,34 @@ const handlePageChange = (selectedPage) => {
                         >
                           <p className="fw-medium fs-5">
                             {userLanguage === "en"
-                              ? proj.nameEn
-                              : proj.nameAr}
+                              ? proj.name
+                              : proj.name_ar}
                           </p>
                          
                           <div className={`icons d-flex align-items-center justify-content-center gap-3`}>
-                            {proj.links.map(link=>{
-                                return(
-                                    <Link to={link.link} key={Date.now().toString(36) + Math.random().toString(36).substr(2)} 
+                            {/* {proj.links.map(link=>{ */}
+                                {/* return( */}
+                                    <Link to={proj.linkedIn} key={Date.now().toString(36) + Math.random().toString(36).substr(2)} 
+                                    className={`icon border border-1 rounded-circle p-2`} style={{"border": "1px solid black"}}
+role="button">
+                                        <img className="img-fluid" src={ln} alt="" />
+                                    </Link>
+
+                                    <Link to={proj.behance} key={Date.now().toString(36) + Math.random().toString(36).substr(2)} 
                                     className={`icon border border-1 rounded-circle p-2`} style={{"border": "1px solid black"}}
 role="button">
                                         <img className="
-                                        img-fluid" src={link.image} alt="" />
+                                        img-fluid" src={be} alt="" />
                                     </Link>
-                                )
-                            })}
+
+                                    <Link to={proj.gitHub} key={Date.now().toString(36) + Math.random().toString(36).substr(2)} 
+                                    className={`icon border border-1 rounded-circle p-2`} style={{"border": "1px solid black"}}
+role="button">
+                                        <img className="
+                                        img-fluid" src={github} alt="" />
+                                    </Link>
+                                {/* ) */}
+                            {/* })} */}
                         </div>
                         
                         </div>

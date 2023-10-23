@@ -14,7 +14,8 @@ import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 import Team from "./pages/team/Team";
 import Blog from "./pages/blog/Blog";
-import { ProjectProvider } from "./containers/Projects";
+import { ProjectProvider } from "./containers/ProjectsContext";
+// import { ProjectProvider } from "./containers/Projects";
 
 function App() {
     return (
