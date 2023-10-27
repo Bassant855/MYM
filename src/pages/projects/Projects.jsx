@@ -3,242 +3,313 @@
 import React, { useContext, useEffect, useState } from "react";
 import classes from "./Projects.module.css";
 import { LanguageContext, Text } from "../../containers/Languages";
-import img from "../../assets/image.png";
-import linked from "../../assets/icon.png";
-import { Container, Image, TabContainer } from "react-bootstrap";
-import { Link } from "react-router-dom";
-const DUMMY_DATA = [
-  {
-    id: 1,
-    nameAr: "نرمين فارس",
-    nameEn: "nermeen fares",
-    category: "ui",
-    titleEn: "UI/UX Designer",
-    titleAr: "مصمم واجهات المستخدم",
-    imgSrc: { img },
-  },
-  {
-    id: 2,
-    nameAr: "نرمين فارس",
-    nameEn: "nermeen fares",
-    category: "web",
-    titleEn: "Frontend Developer",
-    titleAr: "مطور الواجهات الامامية",
-    imgSrc: { img },
-  },
-  {
-    id: 3,
-    nameAr: "نرمين فارس",
-    nameEn: "nermeen fares",
-    category: "web",
-    titleEn: "Backend Developer",
-    imgSrc: { img },
-    titleAr: "مطور الواجهات الخلفية",
-  },
-  {
-    id: 4,
-    nameAr: "نرمين فارس",
-    nameEn: "nermeen fares",
-    category: "web",
-    titleEn: "Backend Developer",
-    imgSrc: { img },
-    titleAr: "مطور الواجهات الخلفية",
-  },
-  {
-    id: 5,
-    nameAr: "نرمين فارس",
-    nameEn: "nermeen fares",
-    category: "web",
-    titleEn: "Frontend Developer",
-    imgSrc: { img },
-    titleAr: "مطور الواجهات الامامية",
-  },
-];
+import { Container,Pagination } from "react-bootstrap";
+import img from "../../assets/Image.png";
+import { ProjectContext } from "../../containers/Projects";
+import ReactPaginate from "react-paginate";
+
+
 const Projects = () => {
-  const [btnCategory, setBtnCategory] = useState("all");
-  const [list, setList] = useState([]);
+    const {
+        projectsList,
+        currentPage,
+        setCurrentPage,
+        setProjectsList,
+        DUMMY_DATA,
+    } = useContext(ProjectContext);
 
-  const btnCategoryHandler = (e) => {
-    setBtnCategory(e.target.dataset.filter);
-  };
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-  useEffect(() => {
-    if (btnCategory === "all") {
-      setList(DUMMY_DATA);
-    } else {
-      setList(DUMMY_DATA.filter((item) => item.category === btnCategory));
-    }
-  }, [btnCategory]);
-  return (
-    <Container>
-      <section className={classes["JOBS-jobs"]} id="jobs">
-        <div className={`${classes["JOBS-jobs__content"]} container`}>
-          <h2 className={`${classes["JOBS-jobs__title"]}`}>
-            <Text tid={"Projects.title.black-text"} />
-            <span className={`${classes["JOBS-jobs__title--red"]}`}>
-              <Text tid={"Projects.title.red-text"} />
-            </span>
-          </h2>
+    useEffect(() => {
+        // setLoading(true);
+        setProjectsList(DUMMY_DATA);
+        // setLoading(false);
+    }, [setProjectsList]);
+    const [btnCategory, setBtnCategory] = useState("all");
+    const perPage = 8;
+    useEffect(() => {
+        const startIndex = currentPage * perPage;
+        const endIndex = startIndex + perPage;
+        if (btnCategory === "all") {
+            setList(projectsList.slice(startIndex, endIndex));
+        } else {
+            setList(
+                projectsList
+                    .filter((item) => item.category === btnCategory)
+                    .slice(startIndex, endIndex)
+            );
+        }
+    }, [btnCategory, currentPage, projectsList]);
+    const handlePageChange = (selectedPage) => {
+        setCurrentPage(selectedPage.selected);
+    };
 
-          <p className={`${classes["JOBS-jobs__text"]}`}>
-            <Text tid="career.jobs.text" />
-          </p>
+    const { userLanguage } = useContext(LanguageContext);
 
-          <div className={`${classes["JOBS-jobs__categories"]}`}>
-            <button
-              className={`${classes["JOBS-jobs__category"]} ${
-                btnCategory === "all"
-                  ? classes["JOBS-jobs__category--active"]
-                  : ""
-              }`}
-              onClick={btnCategoryHandler}
-              data-filter="all"
-            >
-              <Text tid="career.jobs.categories.category_1" />
-            </button>
+    const [list, setList] = useState([]);
 
-            <button
-              className={`${classes["JOBS-jobs__category"]} ${
-                btnCategory === "ui"
-                  ? classes["JOBS-jobs__category--active"]
-                  : ""
-              }`}
-              onClick={btnCategoryHandler}
-              data-filter="ui"
-            >
-              <Text tid="career.jobs.categories.category_2" />
-            </button>
+    const btnCategoryHandler = (e) => {
+        setBtnCategory(e.target.dataset.filter);
+        setCurrentPage(0);
+    };
 
-            <button
-              className={`${classes["JOBS-jobs__category"]} ${
-                btnCategory === "mobile"
-                  ? classes["JOBS-jobs__category--active"]
-                  : ""
-              }`}
-              onClick={btnCategoryHandler}
-              data-filter="mobile"
-            >
-              <Text tid="career.jobs.categories.category_3" />
-            </button>
-
-            <button
-              className={`${classes["JOBS-jobs__category"]} ${
-                btnCategory === "web"
-                  ? classes["JOBS-jobs__category--active"]
-                  : ""
-              }`}
-              onClick={btnCategoryHandler}
-              data-filter="web"
-            >
-              <Text tid="career.jobs.categories.category_4" />
-            </button>
-
-            <button
-              className={`${classes["JOBS-jobs__category"]} ${
-                btnCategory === "non-tech"
-                  ? classes["JOBS-jobs__category--active"]
-                  : ""
-              }`}
-              onClick={btnCategoryHandler}
-              data-filter="non-tech"
-            >
-              <Text tid="career.jobs.categories.category_5" />
-            </button>
-
-            <button
-              className={`${classes["JOBS-jobs__category"]} ${
-                btnCategory === "other"
-                  ? classes["JOBS-jobs__category--active"]
-                  : ""
-              }`}
-              onClick={btnCategoryHandler}
-              data-filter="other"
-            >
-              <Text tid="career.jobs.categories.category_6" />
-            </button>
-          </div>
-
-          <div className={`${classes["JOBS-jobs__list"]} job-list-container`}>
-            <div className={`Employee`}>
-              <div className="row gy-2">
-                {list.length > 0 &&
-                  list.map((job) => (
-                    <div key={job.id} className="col-lg-3 col-sm-12 pb-5">
-                      <div className={`box pb-5 position-relative`}>
-                        <img
-                          className="img-fluid pb-5"
-                          src={img}
-                          alt={job.name}
-                        />
-                        <div
-                          className={`text card bg-white position-absolute start-50 translate-middle-x px-2 py-3`}
-                          style={{ marginTop: "-2cm", zIndex: 1 }}
+    // if(loading){
+    //     return <h2>Loading...</h2>
+    // }
+    const pageCount = Math.ceil(
+        btnCategory === "all"
+            ? projectsList.length / perPage
+            : projectsList.filter((item) => item.category === btnCategory)
+                  .length / perPage
+    );
+    return (
+        <Container>
+            <section className={classes["projects-projects"]}>
+                <div
+                    className={`${classes["projects-projects__content"]} container`}
+                >
+                    <h2 className={`${classes["projects-projects__title"]}`}  style={{fontWeight:'bold', fontSize:'2.5rem'}}>
+                        <Text tid={"Projects.title.black-text"} />
+                        <span
+                            className={`${classes["projects-projects__title--red"]}`}
                         >
-                          <p className="fw-medium fs-5">
-                            {LanguageContext.userLanguage === "en"
-                              ? job.nameEn
-                              : job.nameAr}
-                          </p>
-                          <span className={`grey mb-3`}>
-                            {LanguageContext.userLanguage === "en"
-                              ? job.titleEn
-                              : job.titleAr}
-                          </span>
-                          <div
-                            className={`icons d-flex align-items-center justify-content-center gap-3`}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-              </div>
-            </div>
+                            <Text tid={"Projects.title.red-text"} />
+                        </span>
+                    </h2>
 
-            {list.length === 0 && (
-              <h3 className={`${classes["JOBS-jobs__list--empty"]}`}>
-                <Text tid="career.jobs.emptyMsg" />
-              </h3>
+                    <p className={`${classes["projects-projects__text"]}`}>
+                        <Text tid="Projects.text" />
+                    </p>
+
+                    <div
+                        className={`${classes["projects-projects__categories"]}`}
+                    >
+                        <button
+                            className={`${
+                                classes["projects-projects__category"]
+                            } ${
+                                btnCategory === "all"
+                                    ? classes[
+                                          "projects-projects__category--active"
+                                      ]
+                                    : ""
+                            }`}
+                            onClick={btnCategoryHandler}
+                            data-filter="all"
+                        >
+                            <Text tid="Projects.categories.category_1" />
+                        </button>
+
+                        <button
+                            className={`${
+                                classes["projects-projects__category"]
+                            } ${
+                                btnCategory === "ui"
+                                    ? classes[
+                                          "projects-projects__category--active"
+                                      ]
+                                    : ""
+                            }`}
+                            onClick={btnCategoryHandler}
+                            data-filter="ui"
+                        >
+                            <Text tid="Projects.categories.category_2" />
+                        </button>
+
+                        <button
+                            className={`${
+                                classes["projects-projects__category"]
+                            } ${
+                                btnCategory === "mobile"
+                                    ? classes[
+                                          "projects-projects__category--active"
+                                      ]
+                                    : ""
+                            }`}
+                            onClick={btnCategoryHandler}
+                            data-filter="mobile"
+                        >
+                            <Text tid="Projects.categories.category_3" />
+                        </button>
+
+                        <button
+                            className={`${
+                                classes["projects-projects__category"]
+                            } ${
+                                btnCategory === "web"
+                                    ? classes[
+                                          "projects-projects__category--active"
+                                      ]
+                                    : ""
+                            }`}
+                            onClick={btnCategoryHandler}
+                            data-filter="web"
+                        >
+                            <Text tid="Projects.categories.category_4" />
+                        </button>
+
+                        <button
+                            className={`${
+                                classes["projects-projects__category"]
+                            } ${
+                                btnCategory === "non-tech"
+                                    ? classes[
+                                          "projects-projects__category--active"
+                                      ]
+                                    : ""
+                            }`}
+                            onClick={btnCategoryHandler}
+                            data-filter="non-tech"
+                        >
+                            <Text tid="Projects.categories.category_5" />
+                        </button>
+
+                        <button
+                            className={`${
+                                classes["projects-projects__category"]
+                            } ${
+                                btnCategory === "other"
+                                    ? classes[
+                                          "projects-projects__category--active"
+                                      ]
+                                    : ""
+                            }`}
+                            onClick={btnCategoryHandler}
+                            data-filter="other"
+                        >
+                            <Text tid="Projects.categories.category_6" />
+                        </button>
+                    </div>
+
+                    <div
+                        className={`${classes["projects-projects__list"]} job-list-container`}
+                    >
+                        <div className={`Employee`}>
+                            <div className="row gy-2">
+                                {list.length > 0 &&
+                                    list.map((job) => (
+                                        <div
+                                            key={job.id}
+                                            className="col-lg-3 col-sm-12 pb-5"
+                                        >
+                                            <div
+                                                className={`box pb-5 position-relative`}
+                                            >
+                                                <img
+                                                    className="img-fluid pb-5"
+                                                    src={img}
+                                                    alt={job.name}
+                                                />
+                                                <div
+                                                    className={`text card bg-white position-absolute start-50 translate-middle-x px-2 py-3`}
+                                                    style={{
+                                                        marginTop: "-2cm",
+                                                        zIndex: 1,
+                                                        width: "80%",
+                                                    }}
+                                                >
+                                                    <p className="fw-medium fs-5">
+                                                        {userLanguage === "en"
+                                                            ? job.nameEn
+                                                            : job.nameAr}
+                                                    </p>
+
+                                                    <div
+                                                        className={`icons d-flex align-items-center justify-content-center gap-3`}
+                                                    >
+                                                        {job.links.map(
+                                                            (link) => {
+                                                                return (
+                                                                    <a
+                                                                        href={
+                                                                            link.link
+                                                                        }
+                                                                        key={
+                                                                            Date.now().toString(
+                                                                                36
+                                                                            ) +
+                                                                            Math.random()
+                                                                                .toString(
+                                                                                    36
+                                                                                )
+                                                                                .substr(
+                                                                                    2
+                                                                                )
+                                                                        }
+                                                                        className={`icon border border-1 rounded-circle p-2`}
+                                                                        style={{
+                                                                            border: "1px solid black",
+                                                                        }}
+                                                                        role="button"
+                                                                    >
+                                                                        <img
+                                                                            className="
+                                        img-fluid"
+                                                                            src={
+                                                                                link.image
+                                                                            }
+                                                                            alt=""
+                                                                        />
+                                                                    </a>
+                                                                );
+                                                            }
+                                                        )}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                            </div>
+                        </div>
+
+                        {list.length === 0 && (
+                            <h3
+                                className={`${classes["projects-projects__list--empty"]}`}
+                            >
+                                <Text tid="Projects.emptyMsg" />
+                            </h3>
+                        )}
+                    </div>
+                </div>
+            </section>
+            {pageCount > 1 && (
+                
+                <ReactPaginate
+                    className={`pagination d-flex gap-2 justify-content-center  pb-5 mt-3`}
+                    previousLabel={
+                        <div className={`${classes["pagination-button"]}`}>
+                            {"<"}
+                        </div>
+                    }
+                    activeLinkClassName={`${classes["pagination-button-active"]}`}
+                    nextLabel={
+                        <div className={`${classes["pagination-button"]}`}>
+                            {">"}
+                        </div>
+                    }
+                    breakLabel={"..."}
+                    forcePage={currentPage}
+                    pageCount={Math.ceil(
+                        btnCategory === "all"
+                            ? projectsList.length / perPage
+                            : projectsList.filter(
+                                  (item) => item.category === btnCategory
+                              ).length / perPage
+                    )}
+                    marginPagesDisplayed={2}
+                    pageRangeDisplayed={5}
+                    onPageChange={handlePageChange}
+                    //  containerClassName={'pagination'}
+                    activeClassName={`${classes["pagination-button-active"]}`}
+                    pageClassName={`${classes["pagination-button"]}`}
+                />
             )}
-          </div>
-        </div>
-        <ul
-          className={`pagination d-flex gap-2 justify-content-center align-items-center pb-5 mt-3`}
-        >
-          <li className="border border-1 rounded-1 px-3 py-2" role="button">
-            &lt;
-          </li>
-          <li
-            className={`active border border-1 rounded-1 px-3 py-2 grey`}
-            role="button"
-          >
-            01
-          </li>
-          <li
-            className={`border border-1 rounded-1 px-3 py-2 grey`}
-            role="button"
-          >
-            02
-          </li>
-          <span role="button">...</span>
-          <li
-            className={`border border-1 rounded-1 px-3 py-2 grey`}
-            role="button"
-          >
-            03
-          </li>
-          <li
-            className={`border border-1 rounded-1 px-3 py-2 grey`}
-            role="button"
-          >
-            04
-          </li>
-          <li className="border border-1 rounded-1 px-3 py-2" role="button">
-            &gt;
-          </li>
-        </ul>
-      </section>
-    </Container>
-  );
+
+      
+        </Container>
+    );
 };
 
 export default Projects;

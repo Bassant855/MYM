@@ -1,27 +1,25 @@
 .landing-bottom {
-    background-color: rgba(255, 16, 19, 0.40);
+    background-color: rgba(255, 16, 19, 0.4);
     color: #fff;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     padding: 20px 0;
-
 }
-.soical-cont  {
+.soical-cont {
     justify-content: center;
 }
 
-
-@media (max-width:650px) {
+@media (max-width: 650px) {
     .landing-bottom .container {
         flex-direction: column;
         align-items: stretch;
-
     }
-    .land-soical ,
-    .land-cont .land-para{
+    .land-soical,
+    .land-cont .land-para {
         width: 100% !important;
+        text-align: start !important;
     }
-    .soical-cont  {
-        justify-content: start ;
+    .soical-cont {
+        justify-content: start;
     }
 }
