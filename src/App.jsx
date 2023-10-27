@@ -14,7 +14,9 @@ import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 import Team from "./pages/team/Team";
 import Blog from "./pages/blog/Blog";
+import Text from './pages/Text'
 import { ProjectProvider } from "./containers/Projects";
+
 
 function App() {
     return (
@@ -22,6 +24,7 @@ function App() {
             <ProjectProvider>
             <LanguageProvider>
                 <Navbar />
+        
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/career" element={<Career />} />
@@ -32,6 +35,7 @@ function App() {
                     <Route path="/team" element={<Team />} />
                     <Route path="/blog" element={<Blog />} />
                 </Routes>
+             
                 <Footer />
             </LanguageProvider>
             </ProjectProvider>

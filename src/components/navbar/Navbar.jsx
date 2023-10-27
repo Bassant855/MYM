@@ -1,3 +1,4 @@
+
 import "./navbar.css";
 import { useContext } from "react";
 import { LanguageContext, Text } from "../../containers/Languages";

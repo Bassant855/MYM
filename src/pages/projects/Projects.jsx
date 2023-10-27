@@ -3,10 +3,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import classes from "./Projects.module.css";
 import { LanguageContext, Text } from "../../containers/Languages";
-import { Container } from "react-bootstrap";
+import { Container,Pagination } from "react-bootstrap";
 import img from "../../assets/Image.png";
 import { ProjectContext } from "../../containers/Projects";
 import ReactPaginate from "react-paginate";
+
 
 const Projects = () => {
     const {
@@ -274,6 +275,7 @@ const Projects = () => {
                 </div>
             </section>
             {pageCount > 1 && (
+                
                 <ReactPaginate
                     className={`pagination d-flex gap-2 justify-content-center  pb-5 mt-3`}
                     previousLabel={
@@ -304,6 +306,8 @@ const Projects = () => {
                     pageClassName={`${classes["pagination-button"]}`}
                 />
             )}
+
+      
         </Container>
     );
 };

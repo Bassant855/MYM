@@ -4,7 +4,6 @@
 .port-btns {
     width: fit-content;
     border-radius: 6px;
-
     margin: auto;
     text-align: center;
     border: 1px solid var(--grey-color);
