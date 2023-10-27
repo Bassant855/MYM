@@ -173,8 +173,9 @@
   color: var(--grey-color);
   font-weight: 500px;
 }
-.categories li.active,
-.categories li:hover {
+.categories li.active
+
+ {
   transition: 0.3s;
   background-color: var(--red-color);
   color: var(--white-color);

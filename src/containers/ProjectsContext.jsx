@@ -1,17 +1,17 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useState, createContext, useContext, useEffect } from "react";
-import icon3 from "../assets/be.svg";
-import icon4 from "../assets/github.svg";
-import ln from "../assets/ln.svg";
-import img from "../assets/Image.png";
+import React, { useState, createContext, useEffect } from "react";
+// import icon3 from "../assets/be.svg";
+// import icon4 from "../assets/github.svg";
+// import ln from "../assets/ln.svg";
+// import img from "../assets/Image.png";
 import axios from 'axios'
 // Define your initial data (replace this with your actual data)
 
 // Create the context
 export const ProjectContext = createContext();
 export const ProjectProvider = ({ children }) => {
-    const baseUrl = "http://mircle51-001-site1.gtempurl.com"
+    const baseUrl = "https://mircle51-001-site1.gtempurl.com"
     
     const [projects, setProjects] = useState([])
     async function getProjects() {
