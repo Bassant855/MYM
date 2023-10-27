@@ -2,58 +2,21 @@ import "./portfolio.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Text } from "../../containers/Languages";
-import port from "../../assets/portofolio.png";
 
-const baseUrl = "https://mircle51-001-site1.gtempurl.com"
-// const arr = [
-//   {
-//     id: 1,
-//     category: "design",
-//     img: port,
-//     link: "#",
-//   },
-//   {
-//     id: 2,
-//     category: "design",
-//     img: port,
-//     link: "#",
-//   },
-//   { id: 3, category: "design", img: port, link: "#" },
-//   { id: 4, category: "web", img: port, link: "#" },
-//   { id: 5, category: "web", img: port, link: "#" },
-//   { id: 6, category: "web", img: port, link: "#" },
-//   { id: 7, category: "other", img: port, link: "#" },
-//   { id: 8, category: "mobile", img: port, link: "#" },
-//   { id: 9, category: "mobile", img: port, link: "#" },
-//   { id: 10, category: "mobile", img: port, link: "#" },
-// ];
+
+const baseUrl = "https://mircle51-001-site1.gtempurl.com";
+
 
 const Portfolio = () => {
-  const [projects, setProjects] = useState([])
+  const [projects, setProjects] = useState([]);
   const [category, setCategory] = useState("All");
-  const [result, setResult] = useState([]);
   const [cards, setCards] = useState([]);
 
-  // const buttonHandeler = (e) => {
-  //   setCategory(e.target.dataset.category);
-  // };
-
-  // useEffect(() => {
-  //   if (category == "all") {
-  //     setData(arr);
-  //   } else {
-  //     setData(
-  //       arr.filter((item) => {
-  //         return item.category === category;
-  //       })
-  //     );
-  //   }
-  // }, [category]);
 
   const buttonHandler = (e) => {
     setCategory(e.target.dataset.category);
     console.log(projects);
-    setResult(
+    setCards(
       projects.filter((pro) => {
         return category === "All"
           ? true
@@ -62,8 +25,7 @@ const Portfolio = () => {
     );
   };
 
-
-const getProjects = async () => {
+  const getProjects = async () => {
     try {
       const response = await fetch(`${baseUrl}/Projects`);
       const data = await response.json();
@@ -75,9 +37,9 @@ const getProjects = async () => {
       console.log(error);
     }
   };
-useEffect(() => {
-  getProjects()
-},[])
+  useEffect(() => {
+    getProjects();
+  }, []);
 
   return (
     <div className="portfolio my-5 py-3 ">
@@ -102,69 +64,85 @@ useEffect(() => {
 
         <div className="port-btns mt-3 mb-5">
           <button
-            className={category === "all" ? "active" : "port-btn "}
+            className={category === "All" ? "active" : "port-btn "}
             onClick={(e) => buttonHandler(e)}
-            data-category="all"
+            data-category="All"
           >
-            <Text tid="home-portfolio.port-btns.all-port"/>
+            <Text tid="home-portfolio.port-btns.all-port" />
           </button>
           <button
             className={category === "Designers" ? "active" : "port-btn "}
             onClick={(e) => buttonHandler(e)}
             data-category="Designers"
           >
-            <Text tid="home-portfolio.port-btns.designers"/>
+            <Text tid="home-portfolio.port-btns.designers" />
           </button>
           <button
-            className={category === "Mobile Developer" ? "active" : "port-btn "}
+            className={
+              category === "Mobile Development" ? "active" : "port-btn "
+            }
             onClick={(e) => buttonHandler(e)}
-            data-category="Mobile Developer"
+            data-category="Mobile Development"
           >
-            <Text tid="home-portfolio.port-btns.mobile"/>
+            <Text tid="home-portfolio.port-btns.mobile" />
           </button>
           <button
-            className={category === "Web Developer" ? "active" : "port-btn "}
+            className={category === "Web Development" ? "active" : "port-btn "}
             onClick={(e) => buttonHandler(e)}
-            data-category="Web Developer"
+            data-category="Web Development"
           >
-            <Text tid="home-portfolio.port-btns.web"/>
+            <Text tid="home-portfolio.port-btns.web" />
           </button>
           <button
             className={category === "Others" ? "active" : "port-btn "}
             onClick={(e) => buttonHandler(e)}
             data-category="Others"
           >
-            <Text tid="home-portfolio.port-btns.other"/>
+            <Text tid="home-portfolio.port-btns.other" />
           </button>
         </div>
 
-        <div className="d-flex flex-wrap  gap-3 mb-5 port-container" >
-
-          {projects.length > 0 ? (
-            cards.slice(0,8).map((d) => {
+        <div className="d-flex flex-wrap  gap-3 mb-5 port-container">
+          {cards.length > 0 ? (
+            cards.slice(0, 8).map((d) => {
               return (
                 <div key={d.id} className="port">
                   <div className="hover-port" style={{ width: "100%" }}>
                     <img
                       src={d.picture}
-                      style={{ width: "100%", height: "100%", borderRadius:'6px' }}
+                      style={{ width: "100%", height: "100%" }}
                     />
                   </div>
 
-                  <Link to='/projects' className="port-hover-btn red-btn">
-                  <Text tid="home-portfolio.port-hover-btn"/>
+                  <Link
+                    to='/projects'
+                    target="_blank"
+                    className="port-hover-btn red-btn"
+                  >
+                    <Text tid="home-portfolio.port-hover-btn" />
                   </Link>
                 </div>
               );
             })
           ) : (
-            <h3 style={{color:'#fff'}}><Text tid="home-portfolio.not-found"/></h3>
+            <h3 style={{ color: "#fff" }}>
+              <Text tid="home-portfolio.not-found" />
+            </h3>
           )}
         </div>
 
-        <div style={{ textAlign: "center",marginBottom:"10px"}}>
-          <Link className="red-btn " to="/projects" style={{width:"30%",minWidth:"fit-content",display:'block', margin:"auto"}}>
-          <Text tid="home-portfolio.port-btn"/>
+        <div style={{ textAlign: "center", marginBottom: "10px" }}>
+          <Link
+            className="red-btn  "
+            to="/projects"
+            style={{
+              width: "30%",
+              minWidth: "fit-content",
+              display: "block",
+              margin: "auto",
+            }}
+          >
+            <Text tid="home-portfolio.port-btn" />
           </Link>
         </div>
       </div>
