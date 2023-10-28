@@ -15,6 +15,7 @@ import { ProjectContext } from "../../containers/ProjectsContext";
 const Projects = () => {
   const [windowWidth, setWindowWidth] = useState(9);
   const [list, setList] = useState([]);
+  
   useEffect(() => {
     const size = () => {
       if (window.innerWidth < 830) {
