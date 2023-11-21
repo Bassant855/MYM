@@ -104,15 +104,14 @@
 
   .projects-projects__categories {
     width: 100%;
-    gap: 4px;
     justify-content: flex-start;
     border: none;
+    margin: 0 !important;
     margin-bottom: 3rem;
   }
 
   .projects-projects__category {
     padding: 4px 14px;
-    border: 0.5px solid var(--grey-color);
     flex-grow: 0;
   }
 }
@@ -193,19 +192,24 @@
   color: var(--white-color);
 }
 .pagination-button {
-  display: inline-block;
-  width: 40px; 
-  height: 40px; 
-  line-height: 40px;
+  display: flex;
+  min-width: 40px; 
+  min-height: 40px; 
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border: 1px solid grey; 
-  cursor: pointer;
-  margin: 5px; 
+  cursor: pointer; 
   border-radius: 8px;
   background-color: white;
   color: black;
 }
-
+.pagination-button  a {
+  color: black;
+}
+.pagination-button-active  a {
+  color: #fff;
+}
 .pagination-button-active {
   background-color: #ff1013; 
   color: #fff; 

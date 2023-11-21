@@ -50,15 +50,13 @@ const TeamBox = ({styles}) => {
 
                         <p className="fw-medium fs-5">{
                             <LanguageContext.Consumer>
-                                {(lang)=>lang.userLanguage == "en" ? t.name: t.name_ar}
+                                {(lang)=>lang.userLanguage  == "ar" && t.name_ar ? t.name_ar: t.name}
                             </LanguageContext.Consumer>
                         }</p>
 
-                        <span className={`${styles.grey} mb-3`}>{
-                            <LanguageContext.Consumer>
-                                {(lang)=>lang.userLanguage == "en" ? t.title: t.title_ar}
-                            </LanguageContext.Consumer>
-                        }</span>
+                        <span className={`${styles.grey} mb-3`}>
+                           {t.track}
+                        </span>
 
                         <div className={`${styles.icons} d-flex align-items-center justify-content-center gap-3`}>
                             {[t.email,t.facebook,t.linkedin,t.github,t.behance].map((link,index)=>{

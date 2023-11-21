@@ -235,7 +235,7 @@
       "black-text": "Our ",
       "red-text": "Portfolio"
     },
-    "emptyMsg": "Sorry, No projects Found",
+    "emptyMsg": "Sorry, No projects Yet",
     "All": "All",
     "Designers": "Designers",
     "Mobile-Developer": "Mobile Developer",
@@ -256,12 +256,12 @@
     },
     "categories": {
       "all": "All",
-      "managers": "Managers",
-      "designers": "Designers",
-      "mobile-developer": "Mobile Developer",
-      "web-developer": "Web Developer",
-      "non-technical": "Non Technical",
-      "others": "Others"
+      "Managers": "Managers",
+      "Designer": "Designers",
+      "Mobile Development": "Mobile Developer",
+      "Web Development": "Web Developer",
+      "Non Technical": "Non Technical",
+      "Others": "Others"
     },
     "team-data": {
       "title": {
@@ -271,7 +271,7 @@
         "graphic-designer": "Graphic Designer"
       }
     },
-    "emptyMsg": "Sorry, No Employees Found"
+    "emptyMsg": "Sorry, No Employees Yet"
   },
   "about-us": {
     "about": "About Us",

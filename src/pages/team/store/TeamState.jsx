@@ -1,6 +1,6 @@
 import { useReducer } from "react";
 import { TeamContext } from "./TeamContext";
-import { team } from "../TeamData";
+import { getData } from "../TeamData";
 
 const reducerFn = (state, action)=>{
     switch(action.type){
@@ -37,8 +37,10 @@ export const TeamState= (props)=>{
         })
     }
 
-    const boxesCount=()=>{
+    const boxesCount= async()=>{
         const ct=[]
+        const team = await getData();
+        console.log(team);
         team.map(t=>{
             if(t.section==data.cat || data.cat=="all"){
                 ct.push(t);

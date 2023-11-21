@@ -177,12 +177,12 @@
     },
     "categories": {
       "all": "الجميع",
-      "managers": "المديرين",
-      "designers": "المصممين",
-      "mobile-developer": "مطور الجوال",
-      "web-developer": "مطور ويب",
-      "non-technical": "غير فنية",
-      "others": "آحرون"
+      "Managers": "المديرين",
+      "Designer": "المصممين",
+      "Mobile Development": "مطور الجوال",
+      "Web Development": "مطور ويب",
+      "Non Technical": "غير فنية",
+      "Others": "آخرون"
     },
     "team-data": {
       "title": {
